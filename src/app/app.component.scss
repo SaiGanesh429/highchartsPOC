@@ -1,0 +1,34 @@
+.header {
+    text-align: center;
+    font-size: 22px;
+    color: green;
+    padding: 10px;
+    text-transform: capitalize;
+}
+.main-sec {
+    width: 100%;
+    display: flex;
+    height: 90vh;
+    .left-side {
+        width: 20%;
+        padding: 20px;
+        border: 1px solid;
+        .label {
+            cursor: pointer;
+            margin: 2px;
+            padding: 4px;
+        }
+        .selected {
+            color: #28a728;
+            background: #b289132e;
+        }
+    }
+    .right-side {
+        width: 80%;
+        border: 1px solid black;
+    }
+}
+
+.highcharts-legend-item path {
+    display: none;
+}
