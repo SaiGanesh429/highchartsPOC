@@ -30,7 +30,14 @@ export const LINECHART = {
             return '<div style="width:200px;"><span style="float:left; margin-left:10px"><img src = "http://cdn.onlinewebfonts.com/svg/img_508736.svg" width = "40px" height = "40px" style="background-color: green;"></span><span style="padding:9px">' + 100 + '%</span></div>';
         }
     },
-
+    exporting: {
+        buttons: {
+            contextButton: {
+                enabled: true,
+                menuItems: ['downloadPNG', 'downloadJPEG', 'downloadPDF', 'downloadSVG'],
+            },
+        },
+    },
     plotOptions: {
         series: {
             label: {

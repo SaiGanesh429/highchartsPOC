@@ -7,6 +7,8 @@ import { PIECHART } from './constants/pie-chart.model';
 import { STACKCHART } from './constants/stack-chart.model';
 import { SPLINECHART } from './constants/spline-chart.model';
 import { COMBINATIONCHART } from './constants/combination-chart.model';
+declare var require: any;
+require('highcharts/modules/exporting')(Highcharts);
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

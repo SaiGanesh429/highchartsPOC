@@ -36,7 +36,13 @@ export const PIECHART = {
             pointStart: 2001
         }
     },
-
+    exporting: {
+        buttons: {
+            contextButton: {
+                enabled: false
+            },
+        },
+    },
     series: [{
         name: 'Installation',
         data: [
