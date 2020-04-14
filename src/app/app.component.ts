@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import * as Highcharts from 'highcharts';
-import { LINECHART } from './constants/line-chart.model';
-import { BARCHART } from './constants/bar-chart.model';
-import { BUBBLECHART } from './constants/bubble-chart.model';
-import { PIECHART } from './constants/pie-chart.model';
-import { STACKCHART } from './constants/stack-chart.model';
-import { SPLINECHART } from './constants/spline-chart.model';
-import { COMBINATIONCHART } from './constants/combination-chart.model';
+import { LINECHART } from './models/line-chart.model';
+import { BARCHART } from './models/bar-chart.model';
+import { BUBBLECHART } from './models/bubble-chart.model';
+import { PIECHART } from './models/pie-chart.model';
+import { STACKCHART } from './models/stack-chart.model';
+import { SPLINECHART } from './models/spline-chart.model';
+import { COMBINATIONCHART } from './models/combination-chart.model';
 declare var require: any;
 require('highcharts/modules/exporting')(Highcharts);
 @Component({
