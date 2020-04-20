@@ -1,6 +1,17 @@
-<p>slider</p>
+<p class="sliders">sliders</p>
 <div class="slider-block">
-    <ng5-slider [formControl]="sliderControl" [options]="options"></ng5-slider>
-    <div class="slider-value">{{sliderControl?.value}}</div>
-    <button class="reset-button" (click)="resetSlider()">reset Button</button>
+    <div class="simple-slider">
+        Simple Slider
+        <ng5-slider [(value)]="value" [options]="simpleOptions"></ng5-slider>
+    </div>
+    <div class="custom-slider">
+        <div class="text">Custom Slider</div>
+        <div class="content">
+            <ng5-slider [formControl]="sliderControl" [options]="options"></ng5-slider>
+            <div class="slider-value">{{sliderControl?.value}}</div>
+            <button class="reset-button" (click)="resetSlider()">reset Button</button>
+        </div>
+    </div>
+
+
 </div>

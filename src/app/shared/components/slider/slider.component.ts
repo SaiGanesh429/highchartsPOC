@@ -9,7 +9,14 @@ import { FormControl } from '@angular/forms';
 export class SliderComponent implements OnInit {
   value;
   options;
+  simpleOptions;
   constructor() {
+    this.simpleOptions = {
+      floor: 0,
+      ceil: 100
+    };
+
+    this.value = 30;
     this.options = {
       showTicks: true,
       vertical: true,
