@@ -9,7 +9,8 @@ import { SPLINECHART } from './models/spline-chart.model';
 import { COMBINATIONCHART } from './models/combination-chart.model';
 
 import { WORLDMAPMODEL } from './models/world-map.model';
-import { POPULATIONMAPMODEL } from './models/population-map.model'
+import { POPULATIONMAPMODEL } from './models/population-map.model';
+import { TEMPERATUREMAPMODEL } from './models/world-temperature.model';
 
 
 import * as Highchartmaps from 'highcharts/highmaps';
@@ -29,7 +30,7 @@ export class AppComponent {
   Highcharts = Highcharts;
 
   Highchartmaps=Highchartmaps;
-  charts = ['Line Chart', 'Bar Chart', 'Bubble Chart', 'Pie Chart', 'Stack Chart', 'Spline Chart', 'Combination Chart','World Map','Population Map'];
+  charts = ['Line Chart', 'Bar Chart', 'Bubble Chart', 'Pie Chart', 'Stack Chart', 'Spline Chart', 'Combination Chart','World Map','Population Map', 'Temperature Map'];
   selectedChart = this.charts[0];
 
 
@@ -44,4 +45,5 @@ export class AppComponent {
   combinationChartOptions = COMBINATIONCHART;
   worldMapOptions=WORLDMAPMODEL;
   populationMapOptions=POPULATIONMAPMODEL;
+  temperatureMapOptions=TEMPERATUREMAPMODEL;
 }
