@@ -29,13 +29,15 @@ export class AppComponent {
   title = 'highChartsPoc';
   Highcharts = Highcharts;
 
-  Highchartmaps=Highchartmaps;
-  charts = ['Line Chart', 'Bar Chart', 'Bubble Chart', 'Pie Chart', 'Stack Chart', 'Spline Chart', 'Combination Chart','slider','World Map','Population Map', 'Temperature Map'];
-  selectedChart = this.charts[0];
-  selectedItem = 'slider';
+  Highchartmaps = Highchartmaps;
+  charts = [
+    'Line Chart', 'Bar Chart', 'Bubble Chart',
+    'Pie Chart', 'Stack Chart', 'Spline Chart',
+    'Combination Chart', 'slider', 'World Map', 'Population Map', 'Temperature Map'];
+  selectedItem = this.charts[0];
 
 
-  chartConstructor = "mapChart";
+  chartConstructor = 'mapChart';
 
   lineChartOptions = LINECHART;
   barChartOptions = BARCHART;
@@ -44,7 +46,7 @@ export class AppComponent {
   stackChartOptions = STACKCHART;
   splineChartOptions = SPLINECHART;
   combinationChartOptions = COMBINATIONCHART;
-  worldMapOptions=WORLDMAPMODEL;
-  populationMapOptions=POPULATIONMAPMODEL;
-  temperatureMapOptions=TEMPERATUREMAPMODEL;
+  worldMapOptions = WORLDMAPMODEL;
+  populationMapOptions = POPULATIONMAPMODEL;
+  temperatureMapOptions = TEMPERATUREMAPMODEL;
 }

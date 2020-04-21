@@ -24,7 +24,7 @@
 
       <!-- High-Maps -->
       <highcharts-chart
-      *ngIf="selectedChart=='World Map'"
+      *ngIf="selectedItem=='World Map'"
         id="map-container" 
         [Highcharts]="Highchartmaps"
         [constructorType]="chartConstructor"
@@ -34,7 +34,7 @@
 
     <highcharts-chart
         id="population-map-container" 
-        *ngIf="selectedChart=='Population Map'"
+        *ngIf="selectedItem=='Population Map'"
         [Highcharts]="Highchartmaps"
         [constructorType]="chartConstructor"
         [options]="populationMapOptions"
@@ -43,7 +43,7 @@
 
     <highcharts-chart
         id="temperature-map-container" 
-        *ngIf="selectedChart=='Temperature Map'"
+        *ngIf="selectedItem=='Temperature Map'"
         [Highcharts]="Highchartmaps"
         [constructorType]="chartConstructor"
         [options]="temperatureMapOptions"
