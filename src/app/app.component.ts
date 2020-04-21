@@ -17,8 +17,8 @@ require('highcharts/modules/exporting')(Highcharts);
 export class AppComponent {
   title = 'highChartsPoc';
   Highcharts = Highcharts;
-  charts = ['Line Chart', 'Bar Chart', 'Bubble Chart', 'Pie Chart', 'Stack Chart', 'Spline Chart', 'Combination Chart'];
-  selectedChart = this.charts[0];
+  charts = ['Line Chart', 'Bar Chart', 'Bubble Chart', 'Pie Chart', 'Stack Chart', 'Spline Chart', 'Combination Chart','slider'];
+  selectedItem = 'slider';
 
   lineChartOptions = LINECHART;
   barChartOptions = BARCHART;
