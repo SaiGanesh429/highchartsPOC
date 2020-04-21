@@ -22,6 +22,35 @@
     <highcharts-chart *ngIf="selectedItem=='Combination Chart'" [Highcharts]="Highcharts"
       [options]="combinationChartOptions" style="width: 100%; height: 400px; display: block;"></highcharts-chart>
 
+      <!-- High-Maps -->
+      <highcharts-chart
+      *ngIf="selectedChart=='World Map'"
+        id="map-container" 
+        [Highcharts]="Highchartmaps"
+        [constructorType]="chartConstructor"
+        [options]="worldMapOptions"
+         style="width: 100%; height:80%; display: block;">
+    </highcharts-chart>
+
+    <highcharts-chart
+        id="population-map-container" 
+        *ngIf="selectedChart=='Population Map'"
+        [Highcharts]="Highchartmaps"
+        [constructorType]="chartConstructor"
+        [options]="populationMapOptions"
+         style="width: 100%; height:100%; display: block;">
+    </highcharts-chart>
+
+    <highcharts-chart
+        id="temperature-map-container" 
+        *ngIf="selectedChart=='Temperature Map'"
+        [Highcharts]="Highchartmaps"
+        [constructorType]="chartConstructor"
+        [options]="temperatureMapOptions"
+         style="width: 100%; height:90%; display: block;">
+    </highcharts-chart>
+
+    <!-- Slider -->
 <div class="slider" *ngIf="selectedItem=='slider'">
     <app-slider></app-slider>
   </div>
