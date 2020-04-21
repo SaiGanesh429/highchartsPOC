@@ -30,8 +30,9 @@ export class AppComponent {
   Highcharts = Highcharts;
 
   Highchartmaps=Highchartmaps;
-  charts = ['Line Chart', 'Bar Chart', 'Bubble Chart', 'Pie Chart', 'Stack Chart', 'Spline Chart', 'Combination Chart','World Map','Population Map', 'Temperature Map'];
+  charts = ['Line Chart', 'Bar Chart', 'Bubble Chart', 'Pie Chart', 'Stack Chart', 'Spline Chart', 'Combination Chart','slider','World Map','Population Map', 'Temperature Map'];
   selectedChart = this.charts[0];
+  selectedItem = 'slider';
 
 
   chartConstructor = "mapChart";

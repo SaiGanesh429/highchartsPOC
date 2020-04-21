@@ -1,23 +1,25 @@
 <div class="header"> HighCharts POC</div>
 <div class="main-sec">
   <div class="left-side">
-    <div *ngFor="let chart of charts" class="label" (click)="selectedChart=chart"
-      [ngClass]="{'selected' : selectedChart==chart}">{{chart}}</div>
+    <div *ngFor="let chart of charts" class="label" (click)="selectedItem=chart"
+      [ngClass]="{'selected' : selectedItem==chart}">{{chart}}</div>
   </div>
+  
+
   <div class="right-side">
-    <highcharts-chart *ngIf="selectedChart=='Line Chart'" [Highcharts]="Highcharts" [options]="lineChartOptions"
+    <highcharts-chart *ngIf="selectedItem=='Line Chart'" [Highcharts]="Highcharts" [options]="lineChartOptions"
       style="width: 100%; height: 400px; display: block;"></highcharts-chart>
-    <highcharts-chart *ngIf="selectedChart=='Bar Chart'" [Highcharts]="Highcharts" [options]="barChartOptions"
+    <highcharts-chart *ngIf="selectedItem=='Bar Chart'" [Highcharts]="Highcharts" [options]="barChartOptions"
       style="width: 100%; height: 400px; display: block;"></highcharts-chart>
-    <highcharts-chart *ngIf="selectedChart=='Bubble Chart'" [Highcharts]="Highcharts" [options]="bubbleChartOptions"
+    <highcharts-chart *ngIf="selectedItem=='Bubble Chart'" [Highcharts]="Highcharts" [options]="bubbleChartOptions"
       style="width: 100%; height: 400px; display: block;"></highcharts-chart>
-    <highcharts-chart *ngIf="selectedChart=='Pie Chart'" [Highcharts]="Highcharts" [options]="pieChartOptions"
+    <highcharts-chart *ngIf="selectedItem=='Pie Chart'" [Highcharts]="Highcharts" [options]="pieChartOptions"
       style="width: 100%; height: 400px; display: block;"></highcharts-chart>
-    <highcharts-chart *ngIf="selectedChart=='Stack Chart'" [Highcharts]="Highcharts" [options]="stackChartOptions"
+    <highcharts-chart *ngIf="selectedItem=='Stack Chart'" [Highcharts]="Highcharts" [options]="stackChartOptions"
       style="width: 100%; height: 400px; display: block;"></highcharts-chart>
-    <highcharts-chart *ngIf="selectedChart=='Spline Chart'" [Highcharts]="Highcharts" [options]="splineChartOptions"
+    <highcharts-chart *ngIf="selectedItem=='Spline Chart'" [Highcharts]="Highcharts" [options]="splineChartOptions"
       style="width: 100%; height: 400px; display: block;"></highcharts-chart>
-    <highcharts-chart *ngIf="selectedChart=='Combination Chart'" [Highcharts]="Highcharts"
+    <highcharts-chart *ngIf="selectedItem=='Combination Chart'" [Highcharts]="Highcharts"
       [options]="combinationChartOptions" style="width: 100%; height: 400px; display: block;"></highcharts-chart>
 
       <!-- High-Maps -->
@@ -48,7 +50,10 @@
          style="width: 100%; height:90%; display: block;">
     </highcharts-chart>
 
-
+    <!-- Slider -->
+<div class="slider" *ngIf="selectedItem=='slider'">
+    <app-slider></app-slider>
+  </div>
 
   </div>
 </div>

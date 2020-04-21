@@ -9,7 +9,10 @@ const worldMapJson = {
     "features":[{
         "type":"Feature",
         "id":"FO",
-        "properties":{"hc-group":"admin0","hc-middle-x":0.48,"hc-middle-y":0.54,"hc-key":"fo","hc-a2":"FO","name":"Faroe Islands","labelrank":"6","country-abbrev":"Faeroe Is.","subregion":"Northern Europe","region-wb":"Europe & Central Asia","iso-a3":"FRO","iso-a2":"FO","woe-id":"23424816","continent":"Europe"},
+        "properties":{"hc-group":"admin0",
+        "hc-middle-x":0.48,"hc-middle-y":0.54,
+        "hc-key":"fo","hc-a2":"FO","name":"Faroe Islands",
+        "labelrank":"6","country-abbrev":"Faeroe Is.","subregion":"Northern Europe","region-wb":"Europe & Central Asia","iso-a3":"FRO","iso-a2":"FO","woe-id":"23424816","continent":"Europe"},
         "geometry":{"type":"Polygon","coordinates":[[[3991,8611],[4005,8598],[4004,8594],[3989,8605],[3991,8611]]]}
         },
         {
@@ -255,7 +258,7 @@ const  mapData=[{"code":"AFG","value":10,"name":"Afghanistan","topcountriesdata"
 export const TEMPERATUREMAPMODEL ={
     chart: {
         map:  worldMapJson,
-        borderWidth: 1
+        // borderWidth: 1
     },
     title: {
         text: 'Temperature by country (℃)'
