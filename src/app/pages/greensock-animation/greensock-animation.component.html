@@ -1,0 +1,25 @@
+<div class="header"> Greensock POC</div>
+<div class="main-sec">
+    <div class="left-side">
+        <div *ngFor="let item of items" class="label" (click)="selectedItem=item; action(item)"
+            [ngClass]="{'selected' : selectedItem==item}">{{item}}</div>
+    </div>
+
+
+    <div class="right-side">
+        <div class="car" *ngIf="selectedItem=='move'">
+            <img class="img" src="../../../assets/images/car3.jpg">
+        </div>
+        <div class="football" *ngIf="selectedItem=='bounce'||selectedItem=='scroll'">
+            <img class="img" src="../../../assets/images/football.png">
+        </div>
+        <div class="rotate" *ngIf="selectedItem=='rotate'">
+            <img class="img" src="../../../assets/images/car3.jpg">
+        </div>
+        <!-- <div class="football" *ngIf="selectedItem=='scroll'">
+            <img class="img" src="../../../assets/images/football.png">
+        </div> -->
+
+    </div>
+
+</div>
