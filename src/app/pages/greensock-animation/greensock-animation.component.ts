@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import gsap from 'gsap';
-
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+gsap.registerPlugin(ScrollToPlugin);
 @Component({
   selector: 'app-greensock-animation',
   templateUrl: './greensock-animation.component.html',
@@ -10,7 +11,7 @@ export class GreensockAnimationComponent implements OnInit {
 
   constructor() { }
   items = [
-    'move', 'bounce', 'rotate', 'scroll'];
+    'move', 'bounce', 'rotate', 'scroll', 'scrollToPlugin'];
   selectedItem = this.items[0];
 
   ngOnInit(): void {
@@ -30,8 +31,21 @@ export class GreensockAnimationComponent implements OnInit {
         break;
       case 'scroll':
         this.scroll();
+        break;
     }
   }
+
+  scrollToPlugin() {
+    const homeIntro = gsap.timeline();
+    homeIntro
+      .to(window,
+        {
+          duration: 2,
+          ease: 'back',
+          scrollTo: { y: ".Section2", offsetY: 70 }
+        });
+  }
+
   moveLeft() {
     gsap.to('.img', {
       duration: 2, x: -600,
