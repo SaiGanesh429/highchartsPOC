@@ -4,6 +4,11 @@
     color: green;
     padding: 10px;
     text-transform: capitalize;
+    position: relative;
+    .btn{
+        position: absolute;
+        right: 18px;
+    }
 }
 .main-sec {
     width: 100%;

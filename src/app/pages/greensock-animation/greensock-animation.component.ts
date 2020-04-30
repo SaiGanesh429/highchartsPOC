@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import gsap from 'gsap';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+import { Router } from '@angular/router';
 gsap.registerPlugin(ScrollToPlugin);
 @Component({
   selector: 'app-greensock-animation',
@@ -9,11 +10,10 @@ gsap.registerPlugin(ScrollToPlugin);
 })
 export class GreensockAnimationComponent implements OnInit {
 
-  constructor() { }
   items = [
     'move', 'bounce', 'rotate', 'scroll', 'scrollToPlugin'];
   selectedItem = this.items[0];
-
+  constructor(private router: Router) { }
   ngOnInit(): void {
   }
 
@@ -52,7 +52,9 @@ export class GreensockAnimationComponent implements OnInit {
     });
   }
 
-
+  switch() {
+    this.router.navigate(['./charts']);
+  }
 
   scroll() {
     const windowWrap = gsap.utils.wrap(0, window.innerWidth);

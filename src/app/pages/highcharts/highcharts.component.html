@@ -1,4 +1,6 @@
-<div class="header"> HighCharts POC</div>
+<div class="header"> HighCharts POC 
+<button class='btn' (click)="switch()"> Switch to Greensock Library</button>
+</div>
 <div class="main-sec">
   <div class="left-side">
     <div *ngFor="let chart of charts" class="label" (click)="selectedItem=chart"

@@ -12,6 +12,7 @@ import { WORLDMAPMODEL } from '../../models/world-map.model';
 import { POPULATIONMAPMODEL } from '../../models/population-map.model';
 import { TEMPERATUREMAPMODEL } from '../../models/world-temperature.model';
 import * as Highchartmaps from 'highcharts/highmaps';
+import { Router } from '@angular/router';
 declare var require: any;
 require('highcharts/modules/exporting')(Highcharts);
 @Component({
@@ -20,7 +21,7 @@ require('highcharts/modules/exporting')(Highcharts);
   styleUrls: ['./highcharts.component.scss']
 })
 export class HighchartsComponent {
-
+  constructor(private router: Router) {}
   title = 'highChartsPoc';
   Highcharts = Highcharts;
 
@@ -45,4 +46,7 @@ export class HighchartsComponent {
   populationMapOptions = POPULATIONMAPMODEL;
   temperatureMapOptions = TEMPERATUREMAPMODEL;
 
+  switch() {
+    this.router.navigate(['./greensock']);
+  }
 }
