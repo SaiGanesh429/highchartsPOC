@@ -1,0 +1,49 @@
+.header {
+    text-align: center;
+    font-size: 22px;
+    color: green;
+    padding: 10px;
+    text-transform: capitalize;
+    position: relative;
+    .btn{
+        position: absolute;
+        right: 18px;
+    }
+}
+.main-sec {
+    width: 100%;
+    display: flex;
+    height: 90vh;
+    .left-side {
+        width: 20%;
+        padding: 20px;
+        border: 1px solid;
+        .label {
+            cursor: pointer;
+            margin: 2px;
+            padding: 4px;
+        }
+        .selected {
+            color: #28a728;
+            background: #b289132e;
+        }
+    }
+    .right-side {
+        width: 80%;
+        border: 1px solid black;
+        // overflow: scroll;
+        .car {
+            display: flex;
+            justify-content: flex-end;
+            margin: 20px;
+        }
+        .football img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50px;
+        }
+        .rotate {
+            margin: 20px;
+        }
+    }
+}
