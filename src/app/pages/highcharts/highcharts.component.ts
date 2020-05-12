@@ -21,7 +21,7 @@ require('highcharts/modules/exporting')(Highcharts);
   styleUrls: ['./highcharts.component.scss']
 })
 export class HighchartsComponent {
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
   title = 'highChartsPoc';
   Highcharts = Highcharts;
 
@@ -29,8 +29,8 @@ export class HighchartsComponent {
   charts = [
     'Line Chart', 'Bar Chart', 'Bubble Chart',
     'Pie Chart', 'Stack Chart', 'Spline Chart',
-    'Combination Chart', 'slider', 'World Map', 'Population Map', 'Temperature Map'];
-  selectedItem = this.charts[0];
+    'Combination Chart', 'slider', 'World Map', 'Population Map', 'Temperature Map', 'Hover', 'Hover with GSAP'];
+  selectedItem = this.charts[this.charts.length - 2];
 
 
   chartConstructor = 'mapChart';

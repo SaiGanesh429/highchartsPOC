@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-top: 74px;
+    .block {
+        border: 2px solid;
+        width: 300px;
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        transition: 0.5s;
+        font-size: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .dashlet1 {
+        // background-image: radial-gradient(circle at -89% 0, rgba(175, 111, 177, 0.76), #08a87c 97%);
+    }
+    .dashlet1:hover,
+    .dashlet2:hover,
+    .dashlet3:hover {
+        width: 450px;
+        transition: 0.2s;
+        border-radius: 8%;
+    }
+    .dashlet2 {
+        // background-image: radial-gradient(circle at -89% 0, rgba(175, 111, 177, 0.76), #5f4bb2 97%);
+    }
+    .dashlet3 {
+        // background-image: radial-gradient(circle at -89% 0, rgba(175, 111, 177, 0.76), #969ea2 97%);
+    }
+
+    .chart {
+        width: 450px;
+        height: 100%;
+        position: absolute;
+    }
+}

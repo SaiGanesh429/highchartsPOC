@@ -1,6 +1,7 @@
 export const BARCHART = {
     chart: {
-        type: 'column'
+        type: 'column',
+        backgroundColor: '#08a87c'
     },
     title: {
         text: 'Solar Employment Growth by Sector, 2010-2016'
@@ -38,12 +39,12 @@ export const BARCHART = {
     },
 
     series: [{
-        type:'column',
+        type: 'column',
         name: 'Installation',
         data: [1, 5, 12, 3, 3, 6, 3]
     },
     {
-        type:'spline',
+        type: 'spline',
         name: 'Installation',
         data: [10, 8, 12, 4, 4, 2, 5]
     }],

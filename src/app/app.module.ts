@@ -10,13 +10,17 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HighchartsComponent } from './pages/highcharts/highcharts.component';
 import { GreensockAnimationComponent } from './pages/greensock-animation/greensock-animation.component';
+import { HoverComponent } from './shared/components/hover/hover.component';
+import { HoverWithGsapComponent } from './shared/components/hover-with-gsap/hover-with-gsap.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SliderComponent,
     HighchartsComponent,
-    GreensockAnimationComponent
+    GreensockAnimationComponent,
+    HoverComponent,
+    HoverWithGsapComponent
   ],
   imports: [
     BrowserModule,

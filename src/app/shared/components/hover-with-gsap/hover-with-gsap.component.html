@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="block dashlet1" (mouseover)="setGSAPAnimation('.dashlet1')" (mouseleave)="resetAnimation('.dashlet1')">
+
+        <div class="chart">
+            <highcharts-chart [Highcharts]="Highcharts" [options]="stackChartOptions"
+                style="width: 100%; height: 100%; display: block;"></highcharts-chart>
+        </div>
+    </div>
+    <div class="block dashlet2" (mouseover)="setGSAPAnimation('.dashlet2')" (mouseleave)="resetAnimation('.dashlet2')">
+        <div class="chart">
+            <highcharts-chart [Highcharts]="Highcharts" [options]="stackChartOptions"
+                style="width: 100%; height: 100%; display: block;"></highcharts-chart>
+        </div>
+    </div>
+    <div class="block dashlet3" (mouseover)="setGSAPAnimation('.dashlet3')" (mouseleave)="resetAnimation('.dashlet3')">
+        <div class="chart">
+            <highcharts-chart [Highcharts]="Highcharts" [options]="stackChartOptions"
+                style="width: 100%; height: 100%; display: block;"></highcharts-chart>
+        </div>
+    </div>
+</div>

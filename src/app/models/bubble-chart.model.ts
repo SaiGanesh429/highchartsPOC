@@ -1,7 +1,8 @@
 export const BUBBLECHART = {
     chart: {
         type: 'scatter',
-        zoomType: 'xy'
+        zoomType: 'xy',
+        backgroundColor: '#e475e6'
     },
     title: {
         text: 'Solar Employment Growth by Sector, 2010-2016'
@@ -51,12 +52,29 @@ export const BUBBLECHART = {
                 headerFormat: '<b>{series.name}</b><br>',
                 pointFormat: '{point.x} cm, {point.y} kg'
             }
+        },
+        series: {
+            dataLabels: {
+                enabled: true,
+                align: 'left',
+                borderRadius: '10',
+                className: "labeltesting",
+                color: 'white',
+                y: 0,
+                x: 8,
+                format: ` {point.country}`
+            }
         }
     },
 
     series: [{
         name: 'Installation',
-        data: [1, 5, 12, 3, 3, 6, 3]
+        data: [{ x: 95, y: 95, z: 13.8, name: 'BE', country: 'Belgium' },
+        { x: 86.5, y: 102.9, z: 14.7, name: 'DE', country: 'Germany' },
+        { x: 80.8, y: 91.5, z: 15.8, name: 'FI', country: 'Finland' },
+        { x: 80.4, y: 102.5, z: 12, name: 'NL', country: 'Netherlands' },
+        { x: 80.3, y: 86.1, z: 11.8, name: 'SE', country: 'Sweden' },
+        { x: 78.4, y: 70.1, z: 16.6, name: 'ES', country: 'Spain' },]
     }],
 
     responsive: {

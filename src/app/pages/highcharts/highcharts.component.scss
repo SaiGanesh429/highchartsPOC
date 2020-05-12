@@ -5,7 +5,7 @@
     padding: 10px;
     text-transform: capitalize;
     position: relative;
-    .btn{
+    .btn {
         position: absolute;
         right: 18px;
     }
@@ -97,10 +97,14 @@
     }
 }
 
-.right-side{
-    ::ng-deep{
-        rect.highcharts-background{
-            opacity: 0;
+.right-side {
+    ::ng-deep {
+        text.highcharts-title {
+            font-size: 14px !important;
+            text-anchor: end;
+        }
+        rect.highcharts-background {
+            opacity: 0.4;
         }
     }
 }

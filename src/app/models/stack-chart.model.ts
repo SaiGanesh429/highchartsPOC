@@ -1,12 +1,13 @@
 export const STACKCHART = {
     chart: {
-        type: 'column'
+        type: 'column',
+        backgroundColor: '#08a87c'
     },
     title: {
         text: 'Stacked column chart'
     },
     xAxis: {
-        categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+        categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas', 'pineapples', 'cherries', 'kiwi']
     },
     yAxis: {
         min: 0,
@@ -17,7 +18,7 @@ export const STACKCHART = {
             enabled: true,
             style: {
                 fontWeight: 'bold',
-                color:  'gray'
+                color: 'gray'
             }
         }
     },
@@ -27,7 +28,7 @@ export const STACKCHART = {
         verticalAlign: 'top',
         y: 25,
         floating: true,
-        backgroundColor:'white',
+        backgroundColor: 'white',
         borderColor: '#CCC',
         borderWidth: 1,
         shadow: false
@@ -46,10 +47,10 @@ export const STACKCHART = {
     },
     series: [{
         name: 'John',
-        data: [5, 3, 4, 7, 2]
+        data: [5, 3, 4, 7, 2, 10, 4, 6]
     }, {
         name: 'Jane',
-        data: [2, 4, 10, 2, 1]
+        data: [2, 4, 10, 2, 1, 6, 9, 2]
     }]
 };
 
