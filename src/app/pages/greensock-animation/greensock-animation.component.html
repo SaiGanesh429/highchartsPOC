@@ -25,41 +25,11 @@
                 <div class="icon">Live News</div>
                 <div class="tickerwrapper">
                     <ul class='list'>
-                        <li class='listitem'>
-                            <span (click)="NavigateToCharts()">This is list item1</span>
+                        <li class='listitem' *ngFor="let item of Items">
+                            <span (click)="NavigateToCharts()">{{item}}</span>
                         </li>
-                        <li class='listitem'>
-                            <span (click)="NavigateToCharts()">This is list item2</span>
-                        </li>
-                        <li class='listitem'>
-                            <span (click)="NavigateToCharts()">This is list item3</span>
-                        </li>
-                        <li class='listitem'>
-                            <span (click)="NavigateToCharts()">This is list item4</span>
-                        </li>
-                        <li class='listitem'>
-                            <span (click)="NavigateToCharts()">This is list item5</span>
-                        </li>
-
-                        <!-- <li class='listitem'>
-                            <span (click)="NavigateToCharts()">This is list item6</span>
-                        </li>
-                        <li class='listitem'>
-                            <span (click)="NavigateToCharts()">This is list item7</span>
-                        </li>
-                        <li class='listitem'>
-                            <span (click)="NavigateToCharts()">This is list item8</span>
-                        </li>
-                        <li class='listitem'>
-                            <span (click)="NavigateToCharts()">This is list item9</span>
-                        </li>
-                        <li class='listitem'>
-                            <span (click)="NavigateToCharts()">This is list item10</span>
-                        </li> -->
-
                     </ul>
                 </div>
-
             </div>
         </div>
 

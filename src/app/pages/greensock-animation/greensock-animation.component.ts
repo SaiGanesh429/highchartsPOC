@@ -17,6 +17,7 @@ export class GreensockAnimationComponent implements OnInit {
     'move', 'bounce', 'rotate', 'scroll', 'scrollToPlugin', 'news Scroll'];
   selectedItem = this.items[0];
   infinite;
+  Items = ['This is list item1', 'This is list item2', 'This is list item3', 'This is list item4', 'This is list item5'];
   constructor(private router: Router) { }
   ngOnInit(): void {
   }
