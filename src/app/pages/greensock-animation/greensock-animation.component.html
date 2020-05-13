@@ -19,6 +19,51 @@
         <div class="rotate" *ngIf="selectedItem=='rotate'">
             <img class="img" src="../../../assets/images/car3.jpg">
         </div>
+
+        <div class="rotate" *ngIf="selectedItem=='news Scroll'">
+            <div class="live-news-block">
+                <div class="icon">Live News</div>
+                <div class="tickerwrapper">
+                    <ul class='list'>
+                        <li class='listitem'>
+                            <span (click)="NavigateToCharts()">This is list item1</span>
+                        </li>
+                        <li class='listitem'>
+                            <span (click)="NavigateToCharts()">This is list item2</span>
+                        </li>
+                        <li class='listitem'>
+                            <span (click)="NavigateToCharts()">This is list item3</span>
+                        </li>
+                        <li class='listitem'>
+                            <span (click)="NavigateToCharts()">This is list item4</span>
+                        </li>
+                        <li class='listitem'>
+                            <span (click)="NavigateToCharts()">This is list item5</span>
+                        </li>
+
+                        <!-- <li class='listitem'>
+                            <span (click)="NavigateToCharts()">This is list item6</span>
+                        </li>
+                        <li class='listitem'>
+                            <span (click)="NavigateToCharts()">This is list item7</span>
+                        </li>
+                        <li class='listitem'>
+                            <span (click)="NavigateToCharts()">This is list item8</span>
+                        </li>
+                        <li class='listitem'>
+                            <span (click)="NavigateToCharts()">This is list item9</span>
+                        </li>
+                        <li class='listitem'>
+                            <span (click)="NavigateToCharts()">This is list item10</span>
+                        </li> -->
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
         <div *ngIf="selectedItem=='scrollToPlugin'">
             <button (click)="scrollToPlugin()">Scroll to Section 2</button>
             <h1 class="Section1">Section 1</h1>
