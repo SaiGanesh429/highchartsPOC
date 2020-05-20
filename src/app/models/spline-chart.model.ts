@@ -17,15 +17,17 @@ export const SPLINECHART = {
     yAxis: {
         title: {
             text: 'Number of Employees'
-        }
+        },
+        max: 1500,
+        min: 0,
+        tickInterval: 500
     },
 
     xAxis: {
-        accessibility: {
-            rangeDescription: 'Range: 2010 to 2017'
-        }
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'june', 'July'],
+        // alignTicks: false
+       
     },
-
     legend: {
         layout: 'vertical',
         align: 'right',
@@ -43,14 +45,20 @@ export const SPLINECHART = {
             marker: {
                 enabled: false
             },
-            pointInterval: 3600000, // one hour
-            pointStart: Date.UTC(2018, 1, 13, 0, 0, 0)
+            // pointInterval: 3600000, // one hour
+            // pointStart: 500
         }
     },
 
     series: [{
         name: 'Installation',
-        data: [1, 5, 12, 3, 3, 6, 3]
+        data: [490, 500, 1000, 800, 600, 400, 200]
+        // data: [{ x: 'Chrome', y: 61.41 },
+        // { x: 'Internet Explorer', y: 11.84 },
+        // { x: 'Firefox', y: 10.85 },
+        // { x: 'Edge', y: 4.67 },
+        // { x: 'Safari', y: 4.18 },
+        // { x: 'Other', y: 7.05 }]
     }],
 
     responsive: {

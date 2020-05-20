@@ -11,18 +11,25 @@ export const BUBBLECHART = {
     subtitle: {
         text: 'Source: thesolarfoundation.com'
     },
-
     yAxis: {
         title: {
             text: 'Number of Employees'
-        }
+        },
+        max: 100,
+        min: 0,
+        tickInterval: 20
     },
 
     xAxis: {
         accessibility: {
             rangeDescription: 'Range: 2010 to 2017'
+        },
+        // tickInterval: 2,
+        labels: {
+            format: '{value} %'
         }
     },
+
 
     legend: {
         layout: 'vertical',
@@ -62,19 +69,19 @@ export const BUBBLECHART = {
                 color: 'white',
                 y: 0,
                 x: 8,
-                format: ` {point.country}`
+                format: ` {point.name}`
             }
         }
     },
 
     series: [{
         name: 'Installation',
-        data: [{ x: 95, y: 95, z: 13.8, name: 'BE', country: 'Belgium' },
-        { x: 86.5, y: 102.9, z: 14.7, name: 'DE', country: 'Germany' },
-        { x: 80.8, y: 91.5, z: 15.8, name: 'FI', country: 'Finland' },
-        { x: 80.4, y: 102.5, z: 12, name: 'NL', country: 'Netherlands' },
-        { x: 80.3, y: 86.1, z: 11.8, name: 'SE', country: 'Sweden' },
-        { x: 78.4, y: 70.1, z: 16.6, name: 'ES', country: 'Spain' },]
+        data: [{ x: 2, y: 25, name: 'Belgium' },
+        { x: 4, y: 30, name: 'Germany' },
+        { x: 6, y: 45, name: 'Finland' },
+        { x: 5, y: 55, name: 'Netherlands' },
+        { x: 10, y: 80, name: 'Sweden' },
+        { x: 8, y: 100, name: 'Spain' },]
     }],
 
     responsive: {

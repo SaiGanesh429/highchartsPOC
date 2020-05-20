@@ -12,6 +12,9 @@ import { HighchartsComponent } from './pages/highcharts/highcharts.component';
 import { GreensockAnimationComponent } from './pages/greensock-animation/greensock-animation.component';
 import { HoverComponent } from './shared/components/hover/hover.component';
 import { HoverWithGsapComponent } from './shared/components/hover-with-gsap/hover-with-gsap.component';
+import { IbmCarbonComponent } from './pages/ibm-carbon/ibm-carbon.component';
+import { ButtonModule, CheckboxModule, DropdownModule, InputModule } from "carbon-components-angular";
+import { SimpleSliderComponent } from './shared/components/simple-slider/simple-slider.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,11 @@ import { HoverWithGsapComponent } from './shared/components/hover-with-gsap/hove
     HighchartsComponent,
     GreensockAnimationComponent,
     HoverComponent,
-    HoverWithGsapComponent
+    HoverWithGsapComponent,
+
+    IbmCarbonComponent,
+
+    SimpleSliderComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +36,10 @@ import { HoverWithGsapComponent } from './shared/components/hover-with-gsap/hove
     Ng5SliderModule,
     FormsModule,
     ReactiveFormsModule,
+    ButtonModule,
+    CheckboxModule,
+    DropdownModule,
+    InputModule,
     CommonModule
 
   ],

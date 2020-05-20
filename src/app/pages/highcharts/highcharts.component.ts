@@ -29,7 +29,7 @@ export class HighchartsComponent {
   charts = [
     'Line Chart', 'Bar Chart', 'Bubble Chart',
     'Pie Chart', 'Stack Chart', 'Spline Chart',
-    'Combination Chart', 'slider', 'World Map', 'Population Map', 'Temperature Map', 'Hover', 'Hover with GSAP'];
+    'Combination Chart','simple-slider', 'custom sliders', 'World Map', 'Population Map', 'Temperature Map', 'Hover', 'Hover with GSAP'];
   selectedItem = this.charts[this.charts.length - 2];
 
 

@@ -21,17 +21,38 @@
         </div>
 
         <div class="rotate" *ngIf="selectedItem=='news Scroll'">
+
+
+
+
+
+
+
+
             <div class="live-news-block">
                 <div class="icon">Live News</div>
-                <div class="tickerwrapper">
-                    <ul class='list'>
-                        <li class='listitem' *ngFor="let item of Items">
+                <div class="tickerwrapper" (mouseover)="onMouseHover()" (mouseleave)="onMouseLeave()">
+                    <ul class='list' #list>
+                        <li class='listitem' #childs *ngFor="let item of Items">
+                            <span (click)="NavigateToCharts()">{{item}}</span>
+                        </li>
+
+                    </ul>
+                    <ul class='list cloned' #cloned>
+                        <li class='listitem' #childs *ngFor="let item of Items">
                             <span (click)="NavigateToCharts()">{{item}}</span>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
+
+
+
+
+
+
+
 
 
         <div *ngIf="selectedItem=='scrollToPlugin'">

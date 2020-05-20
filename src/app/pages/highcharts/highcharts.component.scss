@@ -97,6 +97,12 @@
     }
 }
 
+.simpleSlider{
+    width: 500px;
+    margin: 22px;
+    border: 2px solid black;
+    padding: 24px;
+}
 .right-side {
     ::ng-deep {
         text.highcharts-title {

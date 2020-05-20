@@ -7,13 +7,15 @@ export const STACKCHART = {
         text: 'Stacked column chart'
     },
     xAxis: {
-        categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas', 'pineapples', 'cherries', 'kiwi']
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'Jul', 'sept']
     },
     yAxis: {
         min: 0,
         title: {
             text: 'Total fruit consumption'
         },
+        max: 2000,
+        tickInterval: 500,
         stackLabels: {
             enabled: true,
             style: {
@@ -23,8 +25,8 @@ export const STACKCHART = {
         }
     },
     legend: {
-        align: 'right',
-        x: -30,
+        align: 'left',
+        x: 70,
         verticalAlign: 'top',
         y: 25,
         floating: true,
@@ -46,11 +48,11 @@ export const STACKCHART = {
         }
     },
     series: [{
-        name: 'John',
-        data: [5, 3, 4, 7, 2, 10, 4, 6]
+        name: 'test',
+        data: [500, 300, 400, 700, 200, 1000, 400, 600]
     }, {
-        name: 'Jane',
-        data: [2, 4, 10, 2, 1, 6, 9, 2]
+        name: 'test 2',
+        data: [200, 400, 100, 200, 100, 600, 900, 200]
     }]
 };
 

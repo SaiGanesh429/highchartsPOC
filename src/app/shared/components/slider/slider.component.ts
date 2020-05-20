@@ -13,7 +13,8 @@ export class SliderComponent implements OnInit {
   constructor() {
     this.simpleOptions = {
       floor: 0,
-      ceil: 100
+      ceil: 100,
+      vertical: true
     };
 
     this.value = 30;
