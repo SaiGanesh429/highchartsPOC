@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HighchartsChartModule } from 'highcharts-angular';
@@ -12,8 +11,6 @@ import { HighchartsComponent } from './pages/highcharts/highcharts.component';
 import { GreensockAnimationComponent } from './pages/greensock-animation/greensock-animation.component';
 import { HoverComponent } from './shared/components/hover/hover.component';
 import { HoverWithGsapComponent } from './shared/components/hover-with-gsap/hover-with-gsap.component';
-import { IbmCarbonComponent } from './pages/ibm-carbon/ibm-carbon.component';
-import { ButtonModule, CheckboxModule, DropdownModule, InputModule } from "carbon-components-angular";
 import { SimpleSliderComponent } from './shared/components/simple-slider/simple-slider.component';
 
 @NgModule({
@@ -24,9 +21,6 @@ import { SimpleSliderComponent } from './shared/components/simple-slider/simple-
     GreensockAnimationComponent,
     HoverComponent,
     HoverWithGsapComponent,
-
-    IbmCarbonComponent,
-
     SimpleSliderComponent
   ],
   imports: [
@@ -36,10 +30,6 @@ import { SimpleSliderComponent } from './shared/components/simple-slider/simple-
     Ng5SliderModule,
     FormsModule,
     ReactiveFormsModule,
-    ButtonModule,
-    CheckboxModule,
-    DropdownModule,
-    InputModule,
     CommonModule
 
   ],
