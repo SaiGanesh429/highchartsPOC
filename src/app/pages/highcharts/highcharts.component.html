@@ -1,5 +1,5 @@
 <div class="header"> HighCharts POC
-  <button class='btn' (click)="switch()"> Switch to Greensock Library</button>
+  <!-- <button class='btn' (click)="switch()"> Switch to Greensock Library</button> -->
 </div>
 <div class="main-sec">
   <div class="left-side">
@@ -41,11 +41,11 @@
     <div class="slider" *ngIf="selectedItem=='custom sliders'">
       <app-slider></app-slider>
     </div>
-    <div *ngIf="selectedItem=='simple-slider'" class="simpleSlider"> 
+    <div *ngIf="selectedItem=='simple-slider'" class="simpleSlider">
       <app-simple-slider></app-simple-slider>
     </div>
     <app-hover *ngIf="selectedItem=='Hover'"></app-hover>
     <app-hover-with-gsap *ngIf="selectedItem=='Hover with GSAP'"></app-hover-with-gsap>
-
+    <app-carbon class="carbon" *ngIf="selectedItem=='carbon component'"></app-carbon>
   </div>
 </div>

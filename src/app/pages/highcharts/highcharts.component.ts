@@ -27,11 +27,12 @@ export class HighchartsComponent {
 
   Highchartmaps = Highchartmaps;
   charts = [
-    'Line Chart', 'Bar Chart', 'Bubble Chart',
-    'Pie Chart', 'Stack Chart', 'Spline Chart',
-    'Combination Chart','simple-slider', 'custom sliders', 'World Map', 'Population Map', 'Temperature Map', 'Hover', 'Hover with GSAP'];
-  selectedItem = this.charts[this.charts.length - 2];
+    'simple-slider', 'custom sliders', 'Hover', 'Hover with GSAP', 'carbon component'];
+  selectedItem = this.charts[this.charts.length - 1];
 
+  // 'Line Chart', 'Bar Chart', 'Bubble Chart',
+  // 'Pie Chart', 'Stack Chart', 'Spline Chart',
+  // 'Combination Chart', 'World Map', 'Population Map', 'Temperature Map', 
 
   chartConstructor = 'mapChart';
 

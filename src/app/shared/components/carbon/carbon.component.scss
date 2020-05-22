@@ -1,0 +1,19 @@
+.carbon-component {
+    ::ng-deep {
+        #dropdown-0 {
+            background-color: red;
+            .bx--list-box__field {
+                background: white;
+                border: 1px solid black;
+                .bx--list-box__selection--multi {
+                    border-radius: 10px !important;
+                    background: blue !important;
+                }
+            }
+        }
+    }
+}
+
+.bx--list-box__field {
+    border: 1px solid;
+}

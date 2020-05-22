@@ -15,6 +15,7 @@ import { HoverWithGsapComponent } from './shared/components/hover-with-gsap/hove
 import { IbmCarbonComponent } from './pages/ibm-carbon/ibm-carbon.component';
 import { ButtonModule, CheckboxModule, DropdownModule, InputModule } from "carbon-components-angular";
 import { SimpleSliderComponent } from './shared/components/simple-slider/simple-slider.component';
+import { CarbonComponent } from './shared/components/carbon/carbon.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,9 @@ import { SimpleSliderComponent } from './shared/components/simple-slider/simple-
 
     IbmCarbonComponent,
 
-    SimpleSliderComponent
+    SimpleSliderComponent,
+
+    CarbonComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,8 @@ import { SimpleSliderComponent } from './shared/components/simple-slider/simple-
     CheckboxModule,
     DropdownModule,
     InputModule,
-    CommonModule
+    CommonModule,
+    DropdownModule
 
   ],
   providers: [],
