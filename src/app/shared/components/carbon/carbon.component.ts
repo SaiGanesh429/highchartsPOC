@@ -11,21 +11,27 @@ export class CarbonComponent implements OnInit {
   listItems = [
     {
       content: 'item one',
-      selected: true
+      selected: true,
+      id: 1
     },
     {
       content: 'item two',
       selected: false,
+      id: 2
     },
     {
       content: 'item three',
-      selected: false
+      selected: false,
+      id: 3
     },
     {
       content: 'item four',
-      selected: false
+      selected: false,
+      id: 4
     }
   ];
+
+
   ngOnInit(): void {
   }
 
