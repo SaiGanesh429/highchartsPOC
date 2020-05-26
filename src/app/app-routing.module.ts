@@ -5,9 +5,9 @@ import { GreensockAnimationComponent } from './pages/greensock-animation/greenso
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/greensock', pathMatch: 'full' },
+  { path: '', redirectTo: '/charts', pathMatch: 'full' },
   { path: 'charts', component: HighchartsComponent },
-  { path: 'greensock', component: GreensockAnimationComponent },
+  { path: 'greensock', component: GreensockAnimationComponent }
 ];
 
 @NgModule({

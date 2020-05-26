@@ -12,6 +12,9 @@ import { GreensockAnimationComponent } from './pages/greensock-animation/greenso
 import { HoverComponent } from './shared/components/hover/hover.component';
 import { HoverWithGsapComponent } from './shared/components/hover-with-gsap/hover-with-gsap.component';
 import { SimpleSliderComponent } from './shared/components/simple-slider/simple-slider.component';
+import { CarbonComponent } from './shared/components/carbon/carbon.component';
+import { DropdownModule } from 'carbon-components-angular';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +24,9 @@ import { SimpleSliderComponent } from './shared/components/simple-slider/simple-
     GreensockAnimationComponent,
     HoverComponent,
     HoverWithGsapComponent,
-    SimpleSliderComponent
+    SimpleSliderComponent,
+
+    CarbonComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,8 @@ import { SimpleSliderComponent } from './shared/components/simple-slider/simple-
     Ng5SliderModule,
     FormsModule,
     ReactiveFormsModule,
-    CommonModule
+    CommonModule,
+    DropdownModule
 
   ],
   providers: [],
