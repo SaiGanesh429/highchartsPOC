@@ -8,26 +8,26 @@ import { Component, OnInit } from '@angular/core';
 export class CarbonComponent implements OnInit {
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
   listItems = [
     {
-      content: "item one",
-      selected: false
+      content: 'item one',
+      selected: true
     },
     {
-      content: "item two",
+      content: 'item two',
       selected: false,
     },
     {
-      content: "item three",
+      content: 'item three',
       selected: false
     },
     {
-      content: "item four",
+      content: 'item four',
       selected: false
     }
   ];
+  ngOnInit(): void {
+  }
+
 
 }

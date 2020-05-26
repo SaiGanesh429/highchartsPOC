@@ -28,7 +28,7 @@ export class HighchartsComponent {
   Highchartmaps = Highchartmaps;
   charts = [
     'simple-slider', 'custom sliders', 'Hover', 'Hover with GSAP', 'carbon component'];
-  selectedItem = this.charts[this.charts.length - 1];
+  selectedItem = this.charts[0];
 
   // 'Line Chart', 'Bar Chart', 'Bubble Chart',
   // 'Pie Chart', 'Stack Chart', 'Spline Chart',

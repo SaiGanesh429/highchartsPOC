@@ -6,7 +6,7 @@ import { IbmCarbonComponent } from './pages/ibm-carbon/ibm-carbon.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/greensock', pathMatch: 'full' },
+  { path: '', redirectTo: '/charts', pathMatch: 'full' },
   { path: 'charts', component: HighchartsComponent },
   { path: 'greensock', component: GreensockAnimationComponent },
   { path: 'carbonComponents', component: IbmCarbonComponent }

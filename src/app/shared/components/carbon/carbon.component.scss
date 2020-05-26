@@ -16,3 +16,11 @@
 .bx--list-box__field {
     border: 1px solid;
 }
+
+.carbon-components {
+    display: flex;
+    .dropdown {
+        width: 300px;
+        padding: 20px;
+    }
+}
