@@ -1,0 +1,9 @@
+<div style="height: 300px; text-align: center;">
+    <p>Kendo UI Slider</p>
+    <div class="eqSlider">
+        <kendo-slider [vertical]="true" [showButtons]="false" [title]="title" [min]="min" [tickPlacement]="'both'"
+            [max]="max" [fixedTickWidth]="15" [smallStep]="smallStep" [largeStep]="largeStep"
+            [(ngModel)]="valuesVertical"></kendo-slider>
+        <p>{{ valuesVertical }}</p>
+    </div>
+</div>

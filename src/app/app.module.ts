@@ -14,6 +14,8 @@ import { HoverWithGsapComponent } from './shared/components/hover-with-gsap/hove
 import { SimpleSliderComponent } from './shared/components/simple-slider/simple-slider.component';
 import { CarbonComponent } from './shared/components/carbon/carbon.component';
 import { DropdownModule } from 'carbon-components-angular';
+import { InputsModule } from '@progress/kendo-angular-inputs';
+import { KendouiSliderComponent } from './shared/components/kendoui-slider/kendoui-slider.component';
 
 
 @NgModule({
@@ -25,8 +27,8 @@ import { DropdownModule } from 'carbon-components-angular';
     HoverComponent,
     HoverWithGsapComponent,
     SimpleSliderComponent,
-
-    CarbonComponent
+    CarbonComponent,
+    KendouiSliderComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,8 @@ import { DropdownModule } from 'carbon-components-angular';
     FormsModule,
     ReactiveFormsModule,
     CommonModule,
-    DropdownModule
+    DropdownModule,
+    InputsModule
 
   ],
   providers: [],

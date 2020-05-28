@@ -30,7 +30,7 @@ export class HighchartsComponent {
     'Line Chart', 'Bar Chart', 'Bubble Chart',
     'Pie Chart', 'Stack Chart', 'Spline Chart',
     'Combination Chart', 'World Map', 'Population Map',
-    'Temperature Map', 'simple-slider', 'custom sliders', 'Hover', 'Hover with GSAP', 'carbon component'];
+    'Temperature Map', 'simple-slider', 'custom sliders', 'Hover', 'Hover with GSAP', 'carbon component', 'Kendo UI Slider'];
   selectedItem = this.charts[0];
 
 
