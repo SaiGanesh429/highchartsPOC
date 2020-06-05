@@ -14,7 +14,8 @@ import { HoverWithGsapComponent } from './shared/components/hover-with-gsap/hove
 import { SimpleSliderComponent } from './shared/components/simple-slider/simple-slider.component';
 import { CarbonComponent } from './shared/components/carbon/carbon.component';
 import { DropdownModule } from 'carbon-components-angular';
-
+import { NgxBootstrapMultiselectDropdownModule } from 'ngx-bootstrap-multiselect-dropdown/ngx-bootstrap-multiselect-dropdown';
+import { NgxBootstrapMultiselectComponent } from './shared/components/ngx-bootstrap-multiselect/ngx-bootstrap-multiselect.component';
 
 @NgModule({
   declarations: [
@@ -25,8 +26,8 @@ import { DropdownModule } from 'carbon-components-angular';
     HoverComponent,
     HoverWithGsapComponent,
     SimpleSliderComponent,
-
-    CarbonComponent
+    CarbonComponent,
+    NgxBootstrapMultiselectComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +37,7 @@ import { DropdownModule } from 'carbon-components-angular';
     FormsModule,
     ReactiveFormsModule,
     CommonModule,
+    NgxBootstrapMultiselectDropdownModule,
     DropdownModule
 
   ],

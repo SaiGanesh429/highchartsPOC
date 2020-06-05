@@ -24,7 +24,7 @@ export const BUBBLECHART = {
         accessibility: {
             rangeDescription: 'Range: 2010 to 2017'
         },
-        // tickInterval: 2,
+        tickInterval: 2,
         labels: {
             format: '{value} %'
         }
