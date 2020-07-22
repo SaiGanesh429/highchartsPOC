@@ -1,6 +1,6 @@
 export const LINECHART = {
     chart: {
-        type: 'area'
+        type: 'line'
     },
     title: {
         text: 'Solar Employment Growth by Sector, 2010-2016'
@@ -17,9 +17,10 @@ export const LINECHART = {
     },
 
     xAxis: {
-        accessibility: {
-            rangeDescription: 'Range: 2010 to 2017'
-        }
+        // accessibility: {
+        //     rangeDescription: 'Range: 2010 to 2017'
+        // }
+        categories: ['200', '2002', '2003', '2004', '2005', '2006', '2007', '2008']
     },
 
     legend: {
@@ -27,11 +28,7 @@ export const LINECHART = {
         verticalAlign: 'bottom',
         x: 0,
         y: 0,
-        // useHTML: true,
-        // labelFormatter: function () {
-        //     return '<div style="width:200px;"><span style="float:left; margin-left:10px"><img src = "http://cdn.onlinewebfonts.com/svg/img_508736.svg" width = "40px" height = "40px" style="background-color: green;"></span><span style="padding:9px">' + 100 + '%</span></div>';
-        // }
-    },
+       },
     exporting: {
         buttons: {
             contextButton: {
@@ -41,32 +38,40 @@ export const LINECHART = {
         },
     },
     plotOptions: {
-        series: {
-            label: {
-                connectorAllowed: true,
-                enabled: false,
-            },
-            pointStart: 2001,
-        },
+        // series: {
+        //     label: {
+        //         connectorAllowed: true,
+        //         enabled: false,
+        //     },
+        //     pointStart: 2001,
+        // },
     },
 
     series: [{
-        dashStyle: 'line',
-        marker: {
-            symbol: 'diamond'
-        },
-        name: 'Installation',
-        data: [1, 5, 12, 3, 3, 6, 3]
+        name: 'USA',
+        data: [
+            90, 130, 280, 600, 470, 330, 190, 67
+        ],
+        zoneAxis: 'x',
+        zones: [{
+            value: 3
+        }, {
+            dashStyle: 'dash'
+        }]
     }
-        , {
-        dashStyle: 'line',
-        marker: {
-            symbol: 'diamond'
-        },
-        name: 'Installation',
-        data: [10, 15, 2, 5, 7, 9, 0]
-    }
-    ],
+    // , {
+    //     name: 'USSR/Russia',
+    //     data: [
+    //         100, 200, 300, 400, 500, 400, 300, 200
+    //     ],
+    //     zoneAxis: 'x',
+    //     zones: [{
+    //         value: 4
+    //     }, {
+    //         dashStyle: 'dash'
+    //     }]
+    // }
+],
 
     responsive: {
         rules: [{

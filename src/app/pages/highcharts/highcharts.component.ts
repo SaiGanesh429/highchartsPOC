@@ -13,6 +13,7 @@ import { POPULATIONMAPMODEL } from '../../models/population-map.model';
 import { TEMPERATUREMAPMODEL } from '../../models/world-temperature.model';
 import * as Highchartmaps from 'highcharts/highmaps';
 import { Router } from '@angular/router';
+import { STACKCOLUMNMODEL } from 'src/app/models/stack-column.model';
 declare var require: any;
 require('highcharts/modules/exporting')(Highcharts);
 @Component({
@@ -29,7 +30,7 @@ export class HighchartsComponent {
   charts = [
     'Line Chart', 'Bar Chart', 'Bubble Chart',
     'Pie Chart', 'Stack Chart', 'Spline Chart',
-    'Combination Chart', 'simple-slider', 'custom sliders', 'World Map', 'Population Map', 'Temperature Map', 'Hover', 'Hover with GSAP'];
+    'Combination Chart', 'Stack Column Chart', 'simple-slider', 'custom sliders', 'World Map', 'Population Map', 'Temperature Map', 'Hover', 'Hover with GSAP'];
   selectedItem = this.charts[this.charts.length - 1];
 
 
@@ -45,6 +46,7 @@ export class HighchartsComponent {
   worldMapOptions = WORLDMAPMODEL;
   populationMapOptions = POPULATIONMAPMODEL;
   temperatureMapOptions = TEMPERATUREMAPMODEL;
+  stackColumnOptions = STACKCOLUMNMODEL;
 
   switch() {
     this.router.navigate(['./greensock']);

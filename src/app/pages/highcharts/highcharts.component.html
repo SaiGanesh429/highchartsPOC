@@ -28,6 +28,10 @@
       [constructorType]="chartConstructor" [options]="worldMapOptions" style="width: 100%; height:80%; display: block;">
     </highcharts-chart>
 
+    <highcharts-chart *ngIf="selectedItem=='Stack Column Chart'" [Highcharts]="Highcharts"
+    [options]="stackColumnOptions" style="width: 100%; height: 400px; display: block;"></highcharts-chart>
+
+
     <highcharts-chart id="population-map-container" *ngIf="selectedItem=='Population Map'" [Highcharts]="Highchartmaps"
       [constructorType]="chartConstructor" [options]="populationMapOptions"
       style="width: 100%; height:100%; display: block;">
@@ -37,6 +41,8 @@
       [Highcharts]="Highchartmaps" [constructorType]="chartConstructor" [options]="temperatureMapOptions"
       style="width: 100%; height:90%; display: block;">
     </highcharts-chart>
+
+
 
     <div class="slider" *ngIf="selectedItem=='custom sliders'">
       <app-slider></app-slider>

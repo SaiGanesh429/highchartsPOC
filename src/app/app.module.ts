@@ -14,6 +14,7 @@ import { HoverWithGsapComponent } from './shared/components/hover-with-gsap/hove
 import { SimpleSliderComponent } from './shared/components/simple-slider/simple-slider.component';
 import { AgGridComponent } from './shared/components/ag-grid/ag-grid.component';
 import { AgGridModule } from 'ag-grid-angular';
+import { TableComponent } from './pages/table/table.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AgGridModule } from 'ag-grid-angular';
     HoverComponent,
     HoverWithGsapComponent,
     SimpleSliderComponent,
-    AgGridComponent
+    AgGridComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,

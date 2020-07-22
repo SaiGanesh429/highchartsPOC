@@ -9,9 +9,8 @@ export class TableComponent implements OnInit {
 
   constructor() { }
   enableData = false;
-  num = 30
-  ngOnInit(): void {
-  }
+  num = 30;
+  ngOnInit(): void { }
   setFlag(value) {
     this.enableData = value;
   }
