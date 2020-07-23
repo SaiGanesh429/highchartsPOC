@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CarbonComponent } from './carbon.component';
+import { HTML5SliderComponent } from './html5-slider.component';
 
-describe('CarbonComponent', () => {
-  let component: CarbonComponent;
-  let fixture: ComponentFixture<CarbonComponent>;
+describe('HTML5SliderComponent', () => {
+  let component: HTML5SliderComponent;
+  let fixture: ComponentFixture<HTML5SliderComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CarbonComponent ]
+      declarations: [ HTML5SliderComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CarbonComponent);
+    fixture = TestBed.createComponent(HTML5SliderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
