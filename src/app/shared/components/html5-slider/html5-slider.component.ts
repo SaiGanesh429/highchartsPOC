@@ -8,12 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class HTML5SliderComponent implements OnInit {
 
   constructor() { }
-
+  slider;
   ngOnInit(): void {
-    let slider = document.getElementsByClassName('range-slider');
-    // slider.each(function () {
-    //   value = $('.range-slider__value');
-    // })
+    this.slider = document.getElementsByClassName('range-slider')[0].getElementsByTagName('input')[0].value;
+  }
+
+  outputUpdate() {
+    this.slider = document.getElementsByClassName('range-slider')[0].getElementsByTagName('input')[0].value;
   }
 
 }
+

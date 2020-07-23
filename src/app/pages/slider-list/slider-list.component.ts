@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class SliderListComponent implements OnInit {
 
   constructor() { }
-  items = ['Simple Slider', 'Simple Vertical Slider', 'Slider with Ticks', 'Custom Slider with Ticks'];
-  // ,'HTML5 Slider'
+  items = ['Simple Slider', 'Simple Vertical Slider', 'Slider with Ticks', 'Custom Slider with Ticks', 'HTML5 Slider'];
+  // 
   selectedItem = this.items[this.items.length - 1];
 
   lowValue: number = 2;

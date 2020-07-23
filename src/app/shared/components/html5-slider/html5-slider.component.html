@@ -1,15 +1,23 @@
-<!-- <input type="range" min="0" max="100" orient="vertical" class="vertical" value="30"  id="fader" list="volsettings">
-<datalist id="volsettings">
+<div class="range-slider">
+    <input type="range" min="0" max="100" orient="vertical" class="vertical" value="30"  id="fader" list="volsettings" (input)="outputUpdate()">
+    <output class="slider-value" for="fader" id="volume">Value: {{slider}}</output>
+    <datalist id="volsettings">
     <option>0</option>
     <option>20</option>
     <option>40</option>
     <option>60</option>
     <option>80</option>
     <option>100</option>
-</datalist> -->
+</datalist>
+</div>
 
 
-<div class="range-slider">
-    <input class="range-slider__range" type="range" value="100" min="0" max="500" orient="vertical" class="vertical">
-    <span class="range-slider__value">0</span>
-  </div>
+
+
+
+<!-- <div class="range-slider">
+    <input class="range-slider__range" type="range" value="100" min="0" max="500"  step="0"  id="fader"
+       (input)="outputUpdate()">
+    <span class="range-slider__value"></span>
+    <output class="slider-value" for="fader" id="volume">Value: {{slider}}</output>
+</div> -->
