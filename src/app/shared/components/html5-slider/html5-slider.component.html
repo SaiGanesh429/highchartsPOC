@@ -2,12 +2,12 @@
     <input type="range" min="0" max="100" orient="vertical" class="vertical" value="30"  id="fader" list="volsettings" (input)="outputUpdate()">
     <output class="slider-value" for="fader" id="volume">Value: {{slider}}</output>
     <datalist id="volsettings">
-    <option>0</option>
-    <option>20</option>
-    <option>40</option>
-    <option>60</option>
-    <option>80</option>
-    <option>100</option>
+    <option value="0" label="0%"></option>
+    <option value="20" label="20%">20</option>
+    <option value="40" label="40%">40</option>
+    <option value="60" label="60%">60</option>
+    <option value="80" label="80%">80</option>
+    <option value="100" label="100%">100</option>
 </datalist>
 </div>
 

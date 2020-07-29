@@ -56,11 +56,40 @@
 
 .vertical-slider {
   padding-left: 180px !important;
-    padding-top: 20px !important;
+  padding-top: 20px !important;
 }
+
+// .ticks {
+//   ::ng-deep {
+//     ..ng5-slider .ng5-slider-pointer{
+//       cursor: pointer;
+//       width: 34px;
+//       height: 14px;
+//       top: -14px;
+//       background-color: #0db9f0;
+//       z-index: 3;
+//       // /* border-radiu
+//     }
+//     .ng5-slider .ng5-slider-pointer:after {
+//       content: "";
+//       width: 6px;
+//       height: 6px;
+//       position: absolute;
+//       top: 4px;
+//       left: 13px;
+//       border-radius: 4px;
+//       background: #fff;
+//     }
+//   }
+// }
 
 // We need to use ::ng-deep to overcome view encapsulation
 ::ng-deep {
+  .ng5-slider.vertical .ng5-slider-tick-legend {
+    top: 1px !important;
+    right: 25px !important;
+  }
+
   .custom-slider .ng5-slider .ng5-slider-bar {
     background: #ffe4d1;
     height: 2px;
@@ -110,4 +139,3 @@ input.vertical {
   -webkit-appearance: slider-vertical;
   writing-mode: bt-lr;
 }
-
