@@ -85,27 +85,43 @@
 
 // We need to use ::ng-deep to overcome view encapsulation
 ::ng-deep {
+  .insurance .ng5-slider-inner-tooltip {
+    visibility: hidden !important;
+  }
+
+  .insurance .ng5-slider .ng5-slider-tick {
+    width: 0px !important;
+  }
+  .insurance .ng5-slider .ng5-slider-bar {
+    background: #6dd400 !important;
+    width: 6px !important;
+  }
   .ng5-slider.vertical .ng5-slider-tick-legend {
     top: 1px !important;
     right: 25px !important;
   }
 
   .custom-slider .ng5-slider .ng5-slider-bar {
-    background: #ffe4d1;
+    background: #6dd400;
     height: 2px;
   }
   .custom-slider .ng5-slider .ng5-slider-selection {
     background: orange;
   }
 
-  .custom-slider .ng5-slider .ng5-slider-pointer {
-    width: 8px;
-    height: 16px;
-    top: auto; /* to remove the default positioning */
-    bottom: 0;
-    background-color: #333;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+  .insurance .ng5-slider .ng5-slider-pointer {
+    // width: 20px;
+    // height: 20px;
+    // top: auto; /* to remove the default positioning */
+    // bottom: 0;
+    // background-color: #333;
+    // border-top-left-radius: 3px;
+    // border-top-right-radius: 3px;
+  }
+  .insurance.ng5-slider.vertical .ng5-slider-pointer {
+    left: -6px !important;
+    top: auto;
+    border: 1px solid black !important;
   }
 
   .custom-slider .ng5-slider .ng5-slider-pointer:after {

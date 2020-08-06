@@ -27,8 +27,22 @@
             <ng5-slider [(value)]="lowValue" [(highValue)]="highValue" [options]="customSliderWithTickOptions">
             </ng5-slider>
         </div>
+
+        <div class="insurance simple-slider vertical-slider ticks" *ngIf="selectedItem=='Insurance Development Slider'">
+            <ng5-slider [(value)]="insuranceSliderTickValue" [tooltip]="insuranceSliderTickValue" placement="right"
+                [(ngModel)]="insuranceSliderTickValue" [options]="insuranceDevelopmentSlider">
+            </ng5-slider>
+            {{insuranceSliderTickValue}}
+            <!-- [tooltip]="insuranceSliderTickValue"  placement="right" show-delay="300" -->
+
+
+            <!-- <span *ngIf="show" [tooltip]="insuranceSliderTickValue"  placement="right" show-delay="300">helllooo</span> -->
+
+        </div>
+
+
         <div *ngIf="selectedItem=='HTML5 Slider'">
-          <app-html5-slider></app-html5-slider>
+            <app-html5-slider></app-html5-slider>
         </div>
 
     </div>
