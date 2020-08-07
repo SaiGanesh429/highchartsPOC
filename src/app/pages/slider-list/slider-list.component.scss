@@ -86,19 +86,40 @@
 // We need to use ::ng-deep to overcome view encapsulation
 ::ng-deep {
   .insurance .ng5-slider-inner-tooltip {
-    visibility: hidden !important;
+    // visibility: hidden !important;
   }
 
   .insurance .ng5-slider .ng5-slider-tick {
     width: 0px !important;
   }
   .insurance .ng5-slider .ng5-slider-bar {
-    background: #6dd400 !important;
+    // background: #6dd400 !important;
     width: 6px !important;
+  }
+  .ng5-slider-ceil,
+  .ng5-slider-floor {
+    display: none !important;
   }
   .ng5-slider.vertical .ng5-slider-tick-legend {
     top: 1px !important;
     right: 25px !important;
+  }
+
+  .ng5-slider-model-value {
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 4px 0px;
+    background-color: rgb(255, 255, 255);
+    font-family: IBMPlexMono;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: -0.1px;
+    color: rgb(35, 38, 56);
+    width: 32px;
+    padding: 4px 8px !important;
+    height: 20px;
   }
 
   .custom-slider .ng5-slider .ng5-slider-bar {

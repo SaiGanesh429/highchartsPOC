@@ -9,8 +9,10 @@ export class SliderListComponent implements OnInit {
 
   constructor(private elementRef: ElementRef, private ref: ChangeDetectorRef) { }
   items = ['Simple Slider', 'Simple Vertical Slider', 'Slider with Ticks', 'Custom Slider with Ticks', 'HTML5 Slider',
-    'Insurance Development Slider'];
-  // 
+    'Insurance Development Slider with title',
+    , 'Insurance Development Slider with selected Value',
+    , 'Insurance Development Slider with tooltip', 'Insurance Development Slider', 'Insurance Development Slider with hover'];
+
   selectedItem = this.items[this.items.length - 1];
   @ViewChild('HtmlContent') HtmlContent;
   lowValue: number = 2;
@@ -78,52 +80,90 @@ export class SliderListComponent implements OnInit {
     ]
   };
 
-  insuranceSliderTickValue = 5;
+  insuranceSliderTickValue = 10;
   insuranceDevelopmentSlider = {
+    floor: -5,
+    ceil: 20,
+    showTicks: true,
+    showSelectionBar: true,
+    tickStep: 5,
+    tickValueStep: 5,
+    vertical: true,
+    getLegend: (value: number): string => {
+      if (value !== 15) {
+        return `${value}%`;
+      } else {
+        return "";
+      }
+
+    },
+    translate: (value: number): string => {
+      return `${value}%`;
+    }
+  };
+
+  insuranceDevelopmentSlidertooltip = {
+    // showTicksValues: true,
     showTicksValues: true,
+    tickStep: 5,
+    tickValueStep: 5,
     vertical: true,
     floor: -5,
     ceil: 20,
     // ticksArray: [
     //   -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
     // ],
-    stepsArray: [
-      { value: -5, legend: '5%' },
-      { value: -4, },
-      { value: -3, },
-      { value: -2, },
-      { value: -1, },
-      { value: 0, legend: '0%' },
-      { value: 1, },
-      { value: 2, },
-      { value: 3, },
-      { value: 4, },
-      { value: 5, legend: '5%' },
-      { value: 6, },
-      { value: 7, },
-      { value: 8, },
-      { value: 9, },
-      { value: 10, legend: '10%' },
-      { value: 11, },
-      { value: 12, },
-      { value: 13, },
-      { value: 14, },
-      { value: 15, legend: '15%' },
-      { value: 16, },
-      { value: 17 },
-      { value: 18 },
-      { value: 19 },
-      { value: 20, legend: '20%' },
-    ]
+    // stepsArray: [
+    //   { value: -5, legend: '-5%' },
+    //   { value: -4, },
+    //   { value: -3, },
+    //   { value: -2, },
+    //   { value: -1, },
+    //   { value: 0, legend: '0%' },
+    //   { value: 1, },
+    //   { value: 2, },
+    //   { value: 3, },
+    //   { value: 4, },
+    //   { value: 5, legend: '5%' },
+    //   { value: 6, },
+    //   { value: 7, },
+    //   { value: 8, },
+    //   { value: 9, },
+    //   { value: 10, legend: '10%' },
+    //   { value: 11, },
+    //   { value: 12, },
+    //   { value: 13, },
+    //   { value: 14, },
+    //   { value: 15, legend: '15%' },
+    //   { value: 16, },
+    //   { value: 17 },
+    //   { value: 18 },
+    //   { value: 19 },
+    //   { value: 20, legend: '20%' },
+    // ]
   };
 
   ngOnInit(): void {
     // docum
-    setTimeout(() => {
-      this.elementRef.nativeElement.querySelector('.ng5-slider-pointer-min').addEventListener('mouseenter', function () {
-        this.show = true;
-      }.bind(this));
-    }, 300);
+    if (this.selectedItem === 'Insurance Development Slider with hover') {
+      setTimeout(() => {
+        this.elementRef.nativeElement.querySelector('.ng5-slider-pointer-min').addEventListener('mouseenter', function () {
+          this.elementRef.nativeElement.querySelector('.ng5-slider-model-value').style.display = 'block';
+        }.bind(this));
+
+        this.elementRef.nativeElement.querySelector('.ng5-slider-pointer-min').addEventListener('mouseup', function () {
+          this.elementRef.nativeElement.querySelector('.ng5-slider-model-value').style.display = 'block';
+        }.bind(this));
+
+        this.elementRef.nativeElement.querySelector('.ng5-slider-pointer-min').addEventListener('mouseleave', function () {
+          this.elementRef.nativeElement.querySelector('.ng5-slider-model-value').style.display = 'none';
+        }.bind(this));
+
+        this.elementRef.nativeElement.querySelector('.ng5-slider-model-value').style.display = 'none';
+      }, 300);
+    }
+
+
   }
 
   showTooltip() {

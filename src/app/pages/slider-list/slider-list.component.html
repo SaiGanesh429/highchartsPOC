@@ -28,17 +28,51 @@
             </ng5-slider>
         </div>
 
+        <div class="insurance simple-slider vertical-slider ticks"
+            *ngIf="selectedItem=='Insurance Development Slider with title'">
+            <ng5-slider [(value)]="insuranceSliderTickValue" title="Selected Value: {{insuranceSliderTickValue}}"
+                [options]="insuranceDevelopmentSlider">
+            </ng5-slider>
+        </div>
+
+
+
+        <div class="insurance simple-slider vertical-slider ticks"
+            *ngIf="selectedItem=='Insurance Development Slider with selected Value'">
+            <ng5-slider [(value)]="insuranceSliderTickValue" [(ngModel)]="insuranceSliderTickValue"
+                [options]="insuranceDevelopmentSlider">
+            </ng5-slider>
+
+            <div> Selected Value: {{insuranceSliderTickValue}}</div>
+        </div>
+
+
+
         <div class="insurance simple-slider vertical-slider ticks" *ngIf="selectedItem=='Insurance Development Slider'">
+            <ng5-slider [(value)]="insuranceSliderTickValue" [(ngModel)]="insuranceSliderTickValue"
+                [options]="insuranceDevelopmentSlider">
+            </ng5-slider>
+        </div>
+
+
+
+        <div class="insurance simple-slider vertical-slider ticks"
+            *ngIf="selectedItem=='Insurance Development Slider with tooltip'">
             <ng5-slider [(value)]="insuranceSliderTickValue" [tooltip]="insuranceSliderTickValue" placement="right"
+                [(ngModel)]="insuranceSliderTickValue" [options]="insuranceDevelopmentSlidertooltip">
+            </ng5-slider>
+        </div>
+
+        <div class="insurance simple-slider vertical-slider ticks"
+            *ngIf="selectedItem=='Insurance Development Slider with hover'">
+            <ng5-slider [(value)]="insuranceSliderTickValue"
                 [(ngModel)]="insuranceSliderTickValue" [options]="insuranceDevelopmentSlider">
             </ng5-slider>
-            {{insuranceSliderTickValue}}
-            <!-- [tooltip]="insuranceSliderTickValue"  placement="right" show-delay="300" -->
-
-
-            <!-- <span *ngIf="show" [tooltip]="insuranceSliderTickValue"  placement="right" show-delay="300">helllooo</span> -->
-
         </div>
+
+        <ng-template #HtmlContent>
+            <p>Hello i'm a <strong>bold</strong> text!</p>
+        </ng-template>
 
 
         <div *ngIf="selectedItem=='HTML5 Slider'">
