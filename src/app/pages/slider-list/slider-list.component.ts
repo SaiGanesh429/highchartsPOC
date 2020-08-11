@@ -148,18 +148,18 @@ export class SliderListComponent implements OnInit {
     if (this.selectedItem === 'Insurance Development Slider with hover') {
       setTimeout(() => {
         this.elementRef.nativeElement.querySelector('.ng5-slider-pointer-min').addEventListener('mouseenter', function () {
-          this.elementRef.nativeElement.querySelector('.ng5-slider-model-value').style.display = 'block';
+          this.elementRef.nativeElement.querySelector('.ng5-slider-model-value').style.visibility = 'visible';
         }.bind(this));
 
         this.elementRef.nativeElement.querySelector('.ng5-slider-pointer-min').addEventListener('mouseup', function () {
-          this.elementRef.nativeElement.querySelector('.ng5-slider-model-value').style.display = 'block';
+          this.elementRef.nativeElement.querySelector('.ng5-slider-model-value').style.visibility = 'visible';
         }.bind(this));
 
         this.elementRef.nativeElement.querySelector('.ng5-slider-pointer-min').addEventListener('mouseleave', function () {
-          this.elementRef.nativeElement.querySelector('.ng5-slider-model-value').style.display = 'none';
+          this.elementRef.nativeElement.querySelector('.ng5-slider-model-value').style.visibility = 'hidden';
         }.bind(this));
 
-        this.elementRef.nativeElement.querySelector('.ng5-slider-model-value').style.display = 'none';
+        this.elementRef.nativeElement.querySelector('.ng5-slider-model-value').style.visibility = 'hidden';
       }, 300);
     }
 
