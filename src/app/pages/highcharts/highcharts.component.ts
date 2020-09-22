@@ -13,6 +13,9 @@ import { POPULATIONMAPMODEL } from '../../models/population-map.model';
 import { TEMPERATUREMAPMODEL } from '../../models/world-temperature.model';
 import * as Highchartmaps from 'highcharts/highmaps';
 import { Router } from '@angular/router';
+import Heatmap from 'highcharts/modules/heatmap.js';
+import { HEATMAPMODEL } from 'src/app/models/heap-map.model';
+Heatmap(Highcharts);
 declare var require: any;
 require('highcharts/modules/exporting')(Highcharts);
 @Component({
@@ -30,8 +33,8 @@ export class HighchartsComponent {
     'Line Chart', 'Bar Chart', 'Bubble Chart',
     'Pie Chart', 'Stack Chart', 'Spline Chart',
     'Combination Chart', 'World Map', 'Population Map',
-    'Temperature Map', 'simple-slider', 'custom sliders', 'Hover', 'Hover with GSAP'];
-  selectedItem = this.charts[0];
+    'Temperature Map', 'simple-slider', 'custom sliders', 'Hover', 'Hover with GSAP', 'heat Map'];
+  selectedItem = 'heat Map';
 
 
 
@@ -47,6 +50,7 @@ export class HighchartsComponent {
   worldMapOptions = WORLDMAPMODEL;
   populationMapOptions = POPULATIONMAPMODEL;
   temperatureMapOptions = TEMPERATUREMAPMODEL;
+  heatMapOptions = HEATMAPMODEL;
 
   switch() {
     this.router.navigate(['./greensock']);

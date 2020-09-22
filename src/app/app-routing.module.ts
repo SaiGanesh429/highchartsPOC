@@ -9,7 +9,8 @@ const routes: Routes = [
   { path: '', redirectTo: '/charts', pathMatch: 'full' },
   { path: 'charts', component: HighchartsComponent },
   { path: 'greensock', component: GreensockAnimationComponent },
-  { path: 'sliders', component: SliderListComponent }
+  { path: 'sliders', component: SliderListComponent },
+  
 
 ];
 
