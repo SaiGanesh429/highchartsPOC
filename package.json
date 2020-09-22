@@ -23,6 +23,7 @@
     "gsap": "^3.2.6",
     "highcharts": "^8.0.4",
     "highcharts-angular": "^2.4.0",
+    "ng2-tooltip-directive": "^2.9.20",
     "ng5-slider": "^1.2.4",
     "rxjs": "~6.5.4",
     "save": "^2.4.0",

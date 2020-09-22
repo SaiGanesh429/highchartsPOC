@@ -4,7 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { SliderComponent } from './shared/components/slider/slider.component';
-import { Ng5SliderModule } from 'ng5-slider';
+// import { Ng5SliderModule } from 'ng5-slider';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HighchartsComponent } from './pages/highcharts/highcharts.component';
@@ -14,6 +14,8 @@ import { HoverWithGsapComponent } from './shared/components/hover-with-gsap/hove
 import { SimpleSliderComponent } from './shared/components/simple-slider/simple-slider.component';
 import { SliderListComponent } from './pages/slider-list/slider-list.component';
 import { HTML5SliderComponent } from './shared/components/html5-slider/html5-slider.component';
+import { TooltipModule } from 'ng2-tooltip-directive';
+import { NgxSliderModule } from '@m0t0r/ngx-slider';
 
 
 @NgModule({
@@ -32,11 +34,12 @@ import { HTML5SliderComponent } from './shared/components/html5-slider/html5-sli
     BrowserModule,
     AppRoutingModule,
     HighchartsChartModule,
-    Ng5SliderModule,
+    // Ng5SliderModule,
     FormsModule,
     ReactiveFormsModule,
     CommonModule,
-
+    TooltipModule,
+    NgxSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
