@@ -10,38 +10,38 @@
     <div class="right-side">
 
         <div class="simple-slider" *ngIf="selectedItem=='Simple Slider'">
-            <ng5-slider [(value)]="value" [options]="options" (userChangeEnd)="valueUpdated($event)">
-            </ng5-slider>
+            <ngx-slider [(value)]="value" [options]="options" (userChangeEnd)="valueUpdated($event)">
+            </ngx-slider>
         </div>
 
         <div class="simple-slider vertical-slider" *ngIf="selectedItem=='Simple Vertical Slider'">
-            <ng5-slider [(value)]="value" [options]="verticaloptions">
-            </ng5-slider>
+            <ngx-slider [(value)]="value" [options]="verticaloptions">
+            </ngx-slider>
         </div>
 
         <div class="simple-slider vertical-slider ticks" *ngIf="selectedItem=='Slider with Ticks'">
-            <ng5-slider [(value)]="sliderWithTickValue" [options]="sliderWithTickOptions"></ng5-slider>
+            <ngx-slider [(value)]="sliderWithTickValue" [options]="sliderWithTickOptions"></ngx-slider>
         </div>
 
         <div class="simple-slider custom-slider" *ngIf="selectedItem=='Custom Slider with Ticks'">
-            <ng5-slider [(value)]="lowValue" [(highValue)]="highValue" [options]="customSliderWithTickOptions">
-            </ng5-slider>
+            <ngx-slider [(value)]="lowValue" [(highValue)]="highValue" [options]="customSliderWithTickOptions">
+            </ngx-slider>
         </div>
 
         <div class="insurance simple-slider vertical-slider ticks"
             *ngIf="selectedItem=='Insurance Development Slider with title'">
-            <ng5-slider [(value)]="insuranceSliderTickValue" title="Selected Value: {{insuranceSliderTickValue}}"
+            <ngx-slider [(value)]="insuranceSliderTickValue" title="Selected Value: {{insuranceSliderTickValue}}"
                 [options]="insuranceDevelopmentSlider">
-            </ng5-slider>
+            </ngx-slider>
         </div>
 
 
 
         <div class="insurance simple-slider vertical-slider ticks"
             *ngIf="selectedItem=='Insurance Development Slider with selected Value'">
-            <ng5-slider [(value)]="insuranceSliderTickValue" [(ngModel)]="insuranceSliderTickValue"
+            <ngx-slider [(value)]="insuranceSliderTickValue" [(ngModel)]="insuranceSliderTickValue"
                 [options]="insuranceDevelopmentSlider">
-            </ng5-slider>
+            </ngx-slider>
 
             <div> Selected Value: {{insuranceSliderTickValue}}</div>
         </div>
@@ -49,26 +49,30 @@
 
 
         <div class="insurance simple-slider vertical-slider ticks" *ngIf="selectedItem=='Insurance Development Slider'">
-            <ng5-slider [(value)]="insuranceSliderTickValue" [(ngModel)]="insuranceSliderTickValue"
+            <ngx-slider [(value)]="insuranceSliderTickValue" [(ngModel)]="insuranceSliderTickValue"
                 [options]="insuranceDevelopmentSlider">
-            </ng5-slider>
+            </ngx-slider>
         </div>
 
 
 
         <div class="insurance simple-slider vertical-slider ticks"
             *ngIf="selectedItem=='Insurance Development Slider with tooltip'">
-            <ng5-slider [(value)]="insuranceSliderTickValue" [tooltip]="insuranceSliderTickValue" placement="right"
+            <ngx-slider [(value)]="insuranceSliderTickValue" [tooltip]="insuranceSliderTickValue" placement="right"
                 [(ngModel)]="insuranceSliderTickValue" [options]="insuranceDevelopmentSlidertooltip">
-            </ng5-slider>
+            </ngx-slider>
         </div>
 
         <div class="insurance simple-slider vertical-slider ticks"
             *ngIf="selectedItem=='Insurance Development Slider with hover'">
-            <ng5-slider [(value)]="insuranceSliderTickValue"
+            <ngx-slider [(value)]="insuranceSliderTickValue"
                 [(ngModel)]="insuranceSliderTickValue" [options]="insuranceDevelopmentSlider">
-            </ng5-slider>
+            </ngx-slider>
         </div>
+
+        <ngx-slider  (userChangeStart)="hello('caseReserveSufficency')"
+        (userChangeEnd)="hello('end')" [(value)]="value" [options]="options"></ngx-slider>
+
 
         <ng-template #HtmlContent>
             <p>Hello i'm a <strong>bold</strong> text!</p>

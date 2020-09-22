@@ -110,6 +110,7 @@ export class SliderListComponent implements OnInit {
     vertical: true,
     floor: -5,
     ceil: 20,
+    disabled: true,
     // ticksArray: [
     //   -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
     // ],
@@ -147,23 +148,27 @@ export class SliderListComponent implements OnInit {
     // docum
     if (this.selectedItem === 'Insurance Development Slider with hover') {
       setTimeout(() => {
-        this.elementRef.nativeElement.querySelector('.ng5-slider-pointer-min').addEventListener('mouseenter', function () {
-          this.elementRef.nativeElement.querySelector('.ng5-slider-model-value').style.visibility = 'visible';
+        this.elementRef.nativeElement.querySelector('.ngx-slider-pointer-min').addEventListener('mouseenter', function () {
+          this.elementRef.nativeElement.querySelector('.ngx-slider-model-value').style.visibility = 'visible';
         }.bind(this));
 
-        this.elementRef.nativeElement.querySelector('.ng5-slider-pointer-min').addEventListener('mouseup', function () {
-          this.elementRef.nativeElement.querySelector('.ng5-slider-model-value').style.visibility = 'visible';
+        this.elementRef.nativeElement.querySelector('.ngx-slider-pointer-min').addEventListener('mouseup', function () {
+          this.elementRef.nativeElement.querySelector('.ngx-slider-model-value').style.visibility = 'visible';
         }.bind(this));
 
-        this.elementRef.nativeElement.querySelector('.ng5-slider-pointer-min').addEventListener('mouseleave', function () {
-          this.elementRef.nativeElement.querySelector('.ng5-slider-model-value').style.visibility = 'hidden';
+        this.elementRef.nativeElement.querySelector('.ngx-slider-pointer-min').addEventListener('mouseleave', function () {
+          this.elementRef.nativeElement.querySelector('.ngx-slider-model-value').style.visibility = 'hidden';
         }.bind(this));
 
-        this.elementRef.nativeElement.querySelector('.ng5-slider-model-value').style.visibility = 'hidden';
+        this.elementRef.nativeElement.querySelector('.ngx-slider-model-value').style.visibility = 'hidden';
       }, 300);
     }
 
 
+  }
+
+  hello(value) {
+    console.log(value)
   }
 
   showTooltip() {

@@ -63,7 +63,7 @@
 }
 // .ticks {
 //   ::ng-deep {
-//     ..ng5-slider .ng5-slider-pointer{
+//     ..ngx-slider .ngx-slider-pointer{
 //       cursor: pointer;
 //       width: 34px;
 //       height: 14px;
@@ -72,7 +72,7 @@
 //       z-index: 3;
 //       // /* border-radiu
 //     }
-//     .ng5-slider .ng5-slider-pointer:after {
+//     .ngx-slider .ngx-slider-pointer:after {
 //       content: "";
 //       width: 6px;
 //       height: 6px;
@@ -87,33 +87,32 @@
 
 // We need to use ::ng-deep to overcome view encapsulation
 ::ng-deep {
-  .insurance .ng5-slider-inner-tooltip {
+  .insurance .ngx-slider-inner-tooltip {
     // visibility: hidden !important;
   }
 
-  .insurance .ng5-slider .ng5-slider-tick {
+  .insurance .ngx-slider .ngx-slider-tick {
     width: 0px !important;
   }
-  .insurance .ng5-slider .ng5-slider-bar {
+  .insurance .ngx-slider .ngx-slider-bar {
     // background: #6dd400 !important;
     width: 7px !important;
     border-radius: 3px !important;
   }
-  .ng5-slider-selection {
-   
+  .ngx-slider-selection {
     box-shadow: inset 0 1px 4px 0 rgba(0, 0, 0, 0.36) !important;
-  background-color: #6dd400 !important;
+    background-color: #6dd400 !important;
   }
-  .ng5-slider-ceil,
-  .ng5-slider-floor {
+  .ngx-slider-ceil,
+  .ngx-slider-floor {
     display: none !important;
   }
-  .ng5-slider.vertical .ng5-slider-tick-legend {
+  .ngx-slider.vertical .ngx-slider-tick-legend {
     top: -3px !important;
     right: 25px !important;
   }
 
-  .ng5-slider-model-value {
+  .ngx-slider-model-value {
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 4px 0px;
     background-color: rgb(255, 255, 255);
@@ -128,49 +127,49 @@
     padding: 3px 10px !important;
     margin-left: 5px;
   }
-  
-  .ng5-slider.vertical .ng5-slider-pointer {
-  width: 22px !important;
-  height: 19px !important;
-  left: -8px !important;
-  transform: rotate(-270deg);
-  border-radius: 10px;
-  box-shadow: 4px 0 10px 0 rgba(0, 0, 0, 0.1), 2px 0 0 0 #c2c5cb, inset 1px 0 0 2px #ffffff;
-  border-style: solid;
-  border-width: 1px;
-  border-image-source: linear-gradient(to right, #c2c5cb 0%, #ececec 54%, #c2c5cb 100%);
-  border-image-slice: 1;
- background-image: linear-gradient(to left, #f0f2f4 96%, #f9fafa 53%, #eff1f4), linear-gradient(to right, #c2c5cb 0%, #ececec 54%, #c2c5cb 100%);
-  //background-origin: border-box;
-  background-clip: content-box, border-box;
-}
-.ng5-slider-pointer:focus {
-  outline: none !important;
-}
-.ng5-slider .ng5-slider-pointer.ng5-slider-active:after {
-  background-color: #1c2838 !important;
-}
-.ng5-slider.vertical .ng5-slider-bar-wrapper {
-  margin: 0 0 0 -21px !important;
-}
-.ng5-slider-pointer:after {
-  width: 2px !important;
-  height: 4px !important;
-  top: 40% !important;
-  left: 46% !important;
+
+  .ngx-slider.vertical .ngx-slider-pointer {
+    width: 22px !important;
+    height: 19px !important;
+    left: -8px !important;
+    transform: rotate(-270deg);
+    border-radius: 10px;
+    box-shadow: 4px 0 10px 0 rgba(0, 0, 0, 0.1), 2px 0 0 0 #c2c5cb, inset 1px 0 0 2px #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    border-image-source: linear-gradient(to right, #c2c5cb 0%, #ececec 54%, #c2c5cb 100%);
+    border-image-slice: 1;
+    background-image: linear-gradient(to left, #f0f2f4 96%, #f9fafa 53%, #eff1f4),
+      linear-gradient(to right, #c2c5cb 0%, #ececec 54%, #c2c5cb 100%);
+    //background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+  .ngx-slider-pointer:focus {
+    outline: none !important;
+  }
+  .ngx-slider .ngx-slider-pointer.ngx-slider-active:after {
+    background-color: #1c2838 !important;
+  }
+  .ngx-slider.vertical .ngx-slider-bar-wrapper {
+    margin: 0 0 0 -21px !important;
+  }
+  .ngx-slider-pointer:after {
+    width: 2px !important;
+    height: 4px !important;
+    top: 40% !important;
+    left: 46% !important;
     border-radius: 2px !important;
     background-color: #1c2838 !important;
-  
-}
-  .custom-slider .ng5-slider .ng5-slider-bar {
+  }
+  .custom-slider .ngx-slider .ngx-slider-bar {
     background: #6dd400;
     height: 2px;
   }
-  .custom-slider .ng5-slider .ng5-slider-selection {
+  .custom-slider .ngx-slider .ngx-slider-selection {
     background: orange;
   }
 
-  .insurance .ng5-slider .ng5-slider-pointer {
+  .insurance .ngx-slider .ngx-slider-pointer {
     // width: 20px;
     // height: 20px;
     // top: auto; /* to remove the default positioning */
@@ -179,26 +178,26 @@
     // border-top-left-radius: 3px;
     // border-top-right-radius: 3px;
   }
-  .insurance.ng5-slider.vertical .ng5-slider-pointer {
+  .insurance.ngx-slider.vertical .ngx-slider-pointer {
     left: -6px !important;
     top: auto;
     border: 1px solid black !important;
-  };
+  }
 
-  .custom-slider .ng5-slider .ng5-slider-pointer:after {
+  .custom-slider .ngx-slider .ngx-slider-pointer:after {
     display: none;
   }
 
-  .custom-slider .ng5-slider .ng5-slider-bubble {
+  .custom-slider .ngx-slider .ngx-slider-bubble {
     bottom: 14px;
   }
 
-  .custom-slider .ng5-slider .ng5-slider-limit {
+  .custom-slider .ngx-slider .ngx-slider-limit {
     font-weight: bold;
     color: orange;
   }
 
-  .custom-slider .ng5-slider .ng5-slider-tick {
+  .custom-slider .ngx-slider .ngx-slider-tick {
     width: 1px;
     height: 10px;
     margin-left: 4px;
@@ -207,7 +206,7 @@
     top: -1px;
   }
 
-  .custom-slider .ng5-slider .ng5-slider-tick.ng5-slider-selected {
+  .custom-slider .ngx-slider .ngx-slider-tick.ngx-slider-selected {
     background: orange;
   }
 }
