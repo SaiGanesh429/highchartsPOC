@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { HoverWithGsapComponent } from './hover-with-gsap.component';
 
@@ -6,7 +6,7 @@ describe('HoverWithGsapComponent', () => {
   let component: HoverWithGsapComponent;
   let fixture: ComponentFixture<HoverWithGsapComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ HoverWithGsapComponent ]
     })

@@ -15,7 +15,7 @@ import { SimpleSliderComponent } from './shared/components/simple-slider/simple-
 import { SliderListComponent } from './pages/slider-list/slider-list.component';
 import { HTML5SliderComponent } from './shared/components/html5-slider/html5-slider.component';
 import { TooltipModule } from 'ng2-tooltip-directive';
-import { NgxSliderModule } from '@m0t0r/ngx-slider';
+import { NgxSliderModule } from '@angular-slider/ngx-slider';
 
 
 @NgModule({
@@ -28,7 +28,7 @@ import { NgxSliderModule } from '@m0t0r/ngx-slider';
     HoverWithGsapComponent,
     SimpleSliderComponent,
     SliderListComponent,
-    HTML5SliderComponent,
+    HTML5SliderComponent, 
   ],
   imports: [
     BrowserModule,
