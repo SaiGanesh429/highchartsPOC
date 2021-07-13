@@ -21,6 +21,8 @@
     "@angular/platform-browser-dynamic": "~11.0.4",
     "@angular/router": "~11.0.4",
     "@ng-select/ng-select": "^5.0.9",
+    "ag-grid-angular": "^23.1.1",
+    "ag-grid-community": "^23.1.1",
     "classlist.js": "^1.1.20150312",
     "gsap": "^3.2.6",
     "highcharts": "^8.0.4",

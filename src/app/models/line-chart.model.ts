@@ -1,5 +1,7 @@
 export const LINECHART = {
-
+    chart: {
+        type: 'area'
+    },
     title: {
         text: 'Solar Employment Growth by Sector, 2010-2016'
     },
@@ -49,13 +51,22 @@ export const LINECHART = {
     },
 
     series: [{
-        dashStyle: 'Dash',
+        dashStyle: 'line',
         marker: {
             symbol: 'diamond'
         },
         name: 'Installation',
         data: [1, 5, 12, 3, 3, 6, 3]
-    }],
+    }
+        , {
+        dashStyle: 'line',
+        marker: {
+            symbol: 'diamond'
+        },
+        name: 'Installation',
+        data: [10, 15, 2, 5, 7, 9, 0]
+    }
+    ],
 
     responsive: {
         rules: [{

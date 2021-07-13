@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HighchartsComponent } from './pages/highcharts/highcharts.component';
 import { GreensockAnimationComponent } from './pages/greensock-animation/greensock-animation.component';
 import { SliderListComponent } from './pages/slider-list/slider-list.component';
+import { AgGridComponent } from './shared/components/ag-grid/ag-grid.component';
 
 
 const routes: Routes = [
@@ -10,7 +11,7 @@ const routes: Routes = [
   { path: 'charts', component: HighchartsComponent },
   { path: 'greensock', component: GreensockAnimationComponent },
   { path: 'sliders', component: SliderListComponent }
-
+  { path: 'ag-grid', component: AgGridComponent }
 ];
 
 @NgModule({

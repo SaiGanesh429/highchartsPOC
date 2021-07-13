@@ -18,6 +18,10 @@ import { TooltipModule } from 'ng2-tooltip-directive';
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 
 
+import { AgGridComponent } from './shared/components/ag-grid/ag-grid.component';
+import { AgGridModule } from 'ag-grid-angular';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +33,7 @@ import { NgxSliderModule } from '@angular-slider/ngx-slider';
     SimpleSliderComponent,
     SliderListComponent,
     HTML5SliderComponent, 
+    AgGridComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +45,8 @@ import { NgxSliderModule } from '@angular-slider/ngx-slider';
     CommonModule,
     TooltipModule,
     NgxSliderModule
+    AgGridModule.withComponents([])
+
   ],
   providers: [],
   bootstrap: [AppComponent]
