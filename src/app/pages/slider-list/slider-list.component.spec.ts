@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { HoverComponent } from './hover.component';
+import { SliderListComponent } from './slider-list.component';
 
-describe('HoverComponent', () => {
-  let component: HoverComponent;
-  let fixture: ComponentFixture<HoverComponent>;
+describe('SliderListComponent', () => {
+  let component: SliderListComponent;
+  let fixture: ComponentFixture<SliderListComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ HoverComponent ]
+      declarations: [ SliderListComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HoverComponent);
+    fixture = TestBed.createComponent(SliderListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

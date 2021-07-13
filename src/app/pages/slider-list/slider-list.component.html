@@ -1,0 +1,87 @@
+<div class="header"> Slider Feasibilty
+</div>
+<div class="main-sec">
+    <div class="left-side">
+        <div *ngFor="let item of items" class="label" (click)="selectedItem=item"
+            [ngClass]="{'selected' : selectedItem==item}">{{item}}</div>
+    </div>
+
+
+    <div class="right-side">
+
+        <div class="simple-slider" *ngIf="selectedItem=='Simple Slider'">
+            <ngx-slider [(value)]="value" [options]="options" (userChangeEnd)="valueUpdated($event)">
+            </ngx-slider>
+        </div>
+
+        <div class="simple-slider vertical-slider" *ngIf="selectedItem=='Simple Vertical Slider'">
+            <ngx-slider [(value)]="value" [options]="verticaloptions">
+            </ngx-slider>
+        </div>
+
+        <div class="simple-slider vertical-slider ticks" *ngIf="selectedItem=='Slider with Ticks'">
+            <ngx-slider [(value)]="sliderWithTickValue" [options]="sliderWithTickOptions"></ngx-slider>
+        </div>
+
+        <div class="simple-slider custom-slider" *ngIf="selectedItem=='Custom Slider with Ticks'">
+            <ngx-slider [(value)]="lowValue" [(highValue)]="highValue" [options]="customSliderWithTickOptions">
+            </ngx-slider>
+        </div>
+
+        <div class="insurance simple-slider vertical-slider ticks"
+            *ngIf="selectedItem=='Insurance Development Slider with title'">
+            <ngx-slider [(value)]="insuranceSliderTickValue" title="Selected Value: {{insuranceSliderTickValue}}"
+                [options]="insuranceDevelopmentSlider">
+            </ngx-slider>
+        </div>
+
+
+
+        <div class="insurance simple-slider vertical-slider ticks"
+            *ngIf="selectedItem=='Insurance Development Slider with selected Value'">
+            <ngx-slider [(value)]="insuranceSliderTickValue" [(ngModel)]="insuranceSliderTickValue"
+                [options]="insuranceDevelopmentSlider">
+            </ngx-slider>
+
+            <div> Selected Value: {{insuranceSliderTickValue}}</div>
+        </div>
+
+
+
+        <div class="insurance simple-slider vertical-slider ticks" *ngIf="selectedItem=='Insurance Development Slider'">
+            <ngx-slider [(value)]="insuranceSliderTickValue" [(ngModel)]="insuranceSliderTickValue"
+                [options]="insuranceDevelopmentSlider">
+            </ngx-slider>
+        </div>
+
+
+
+        <div class="insurance simple-slider vertical-slider ticks"
+            *ngIf="selectedItem=='Insurance Development Slider with tooltip'">
+            <ngx-slider [(value)]="insuranceSliderTickValue" [tooltip]="insuranceSliderTickValue" placement="right"
+                [(ngModel)]="insuranceSliderTickValue" [options]="insuranceDevelopmentSlidertooltip">
+            </ngx-slider>
+        </div>
+
+        <div class="insurance simple-slider vertical-slider ticks"
+            *ngIf="selectedItem=='Insurance Development Slider with hover'">
+            <ngx-slider [(value)]="insuranceSliderTickValue"
+                [(ngModel)]="insuranceSliderTickValue" [options]="insuranceDevelopmentSlider">
+            </ngx-slider>
+        </div>
+
+        <ngx-slider  (userChangeStart)="hello('caseReserveSufficency')"
+        (userChangeEnd)="hello('end')" [(value)]="value" [options]="options"></ngx-slider>
+
+
+        <ng-template #HtmlContent>
+            <p>Hello i'm a <strong>bold</strong> text!</p>
+        </ng-template>
+
+
+        <div *ngIf="selectedItem=='HTML5 Slider'">
+            <app-html5-slider></app-html5-slider>
+        </div>
+
+    </div>
+</div>

@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { GreensockAnimationComponent } from './greensock-animation.component';
 
@@ -6,7 +6,7 @@ describe('GreensockAnimationComponent', () => {
   let component: GreensockAnimationComponent;
   let fixture: ComponentFixture<GreensockAnimationComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ GreensockAnimationComponent ]
     })

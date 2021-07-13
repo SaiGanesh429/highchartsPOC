@@ -4,7 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { SliderComponent } from './shared/components/slider/slider.component';
-import { Ng5SliderModule } from 'ng5-slider';
+// import { Ng5SliderModule } from 'ng5-slider';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HighchartsComponent } from './pages/highcharts/highcharts.component';
@@ -12,8 +12,15 @@ import { GreensockAnimationComponent } from './pages/greensock-animation/greenso
 import { HoverComponent } from './shared/components/hover/hover.component';
 import { HoverWithGsapComponent } from './shared/components/hover-with-gsap/hover-with-gsap.component';
 import { SimpleSliderComponent } from './shared/components/simple-slider/simple-slider.component';
+import { SliderListComponent } from './pages/slider-list/slider-list.component';
+import { HTML5SliderComponent } from './shared/components/html5-slider/html5-slider.component';
+import { TooltipModule } from 'ng2-tooltip-directive';
+import { NgxSliderModule } from '@angular-slider/ngx-slider';
+
+
 import { AgGridComponent } from './shared/components/ag-grid/ag-grid.component';
 import { AgGridModule } from 'ag-grid-angular';
+
 
 @NgModule({
   declarations: [
@@ -24,16 +31,20 @@ import { AgGridModule } from 'ag-grid-angular';
     HoverComponent,
     HoverWithGsapComponent,
     SimpleSliderComponent,
+    SliderListComponent,
+    HTML5SliderComponent, 
     AgGridComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HighchartsChartModule,
-    Ng5SliderModule,
+    // Ng5SliderModule,
     FormsModule,
     ReactiveFormsModule,
     CommonModule,
+    TooltipModule,
+    NgxSliderModule
     AgGridModule.withComponents([])
 
   ],
